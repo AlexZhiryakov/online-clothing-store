@@ -1,0 +1,183 @@
+.newCollection {
+  .bgNewCollection {
+    margin-top: -30px;
+    border-radius: 0.6vw;
+    background: linear-gradient(
+      60deg,
+      rgb(234, 234, 135) 5vw,
+      rgb(219, 181, 112) 10vw,
+      rgb(192, 113, 126) 25vw,
+      rgb(174, 73, 174) 40vw,
+      blue
+    );
+    width: 100%;
+    height: 29vw;
+    display: grid;
+    @media (max-width: 1100px) {
+      height: 40vw;
+    }
+    @media (max-width: 700px) {
+      height: 45vw;
+    }
+
+    grid-template-columns: 1fr 1fr;
+    .newCollectionFirstColumn {
+      margin-left: 3vw;
+      margin-top: 5vw;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1405px) {
+        margin-top: 5vw;
+      }
+      @media (max-width: 700px) {
+        margin-top: 8vw;
+        margin-left: 4vw;
+      }
+      .nameSlide {
+        color: rgb(255, 255, 255);
+        font-size: 2.8vw;
+        font-weight: 700;
+        letter-spacing: 1%;
+        @media (max-width: 1100px) {
+          font-size: 3.7vw;
+        }
+        @media (max-width: 700px) {
+          font-size: 5.2vw;
+          width: 85vw;
+        }
+      }
+      .descriptionSlide {
+        color: rgb(255, 255, 255);
+        font-size: 1.2vw;
+        font-weight: 400;
+        letter-spacing: 1%;
+        width: 35vw;
+        margin-top: 1vw;
+        @media (max-width: 1100px) {
+          font-size: 1.7vw;
+          margin-top: 1.2vw;
+        }
+        @media (max-width: 700px) {
+          font-size: 2.2vw;
+          width: 62vw;
+        }
+      }
+      .buttonSlide {
+        text-decoration: none;
+        border: none;
+        border-radius: 0.63vw;
+        background: rgb(255, 255, 255);
+        width: 16vw;
+        // height: 2.7vw;
+        color: rgb(43, 41, 41);
+        font-size: 1.3vw;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 1%;
+        cursor: pointer;
+        margin-top: 1vw;
+        text-align: center;
+        padding: 0.8vw 0;
+        @media (max-width: 1100px) {
+          font-size: 1.8vw;
+          margin-top: 1.2vw;
+        }
+        @media (max-width: 700px) {
+          margin-top: 2.5vw;
+          font-size: 1.9vw;
+          width: 18vw;
+        }
+      }
+    }
+    .newCollectionSecondColumn {
+      display: flex;
+      margin-left: 3vw;
+      .bgCircle {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 300px;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.046),
+          #ffffff6a
+        );
+        margin-top: 2vw;
+        margin-left: 4vw;
+        .bgSneakers {
+          background-image: url('../../img/bgSneak.svg');
+          width: 26vw;
+          height: 26vw;
+          background-size: cover;
+          @media (max-width: 1100px) {
+            width: 35vw;
+            height: 35vw;
+          }
+        }
+        @media (max-width: 1100px) {
+          width: 35vw;
+          height: 35vw;
+        }
+      }
+      .bgNike {
+        background-image: url('../../img/bgNike.svg');
+        width: 9.67vw;
+        height: 5.1vw;
+        margin-top: 3vw;
+        margin-left: -7vw;
+        background-size: cover;
+        @media (max-width: 1100px) {
+          width: 11vw;
+          height: 6vw;
+          margin-top: 5vw;
+          margin-left: -10vw;
+        }
+      }
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+
+  .CompanyCollection {
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+    justify-content: space-between;
+    .nike {
+      background-image: url('../../img/logoNikeNew.svg');
+      width: 9.5vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+    .theNF {
+      background-image: url('../../img/logoTheNFNew.svg');
+      width: 11.3vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+    .adidas {
+      background-image: url('../../img/logoAdidasNew.svg');
+      width: 7.7vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+    .puma {
+      background-image: url('../../img/logoPumaNew.svg');
+      width: 10vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+    .balance {
+      background-image: url('../../img/logoBalanceNew.svg');
+      width: 11.2vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+    .jordan {
+      background-image: url('../../img/logoJordanNew.svg');
+      width: 8.2vw;
+      height: 5.2vw;
+      background-size: cover;
+    }
+  }
+}

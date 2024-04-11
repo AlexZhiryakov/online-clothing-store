@@ -1,0 +1,461 @@
+.Original {
+  margin-top: 2vw;
+}
+@media (max-width: 1100px) {
+  .Original {
+    margin-top: 0vw;
+  }
+}
+.Original .firstParagraph .bg {
+  border-radius: 12px;
+  background: rgb(255, 240, 186);
+  width: 100%;
+  height: 28.07vw;
+  overflow: hidden;
+}
+@media (max-width: 1100px) {
+  .Original .firstParagraph .bg {
+    height: 55vw;
+  }
+}
+.Original .firstParagraph .bg .line {
+  background-image: url("../../img/LineInOriginal.svg");
+  width: 110vw;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  right: 7vw;
+}
+.Original .firstParagraph .bg .line .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 7vw;
+  margin-top: 1vw;
+}
+@media (max-width: 1100px) {
+  .Original .firstParagraph .bg .line .content {
+    margin-top: 2vw;
+  }
+}
+@media (max-width: 420px) {
+  .Original .firstParagraph .bg .line .content {
+    margin-right: 9vw;
+  }
+}
+.Original .firstParagraph .bg .line .content .name {
+  color: rgb(43, 41, 41);
+  font-size: 2.5vw;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 1%;
+  margin-top: 2vw;
+}
+@media (max-width: 1100px) {
+  .Original .firstParagraph .bg .line .content .name {
+    font-size: 3.5vw;
+  }
+}
+.Original .firstParagraph .bg .line .content .descr {
+  color: rgb(70, 70, 70);
+  font-size: 1.25vw;
+  font-weight: 500;
+  letter-spacing: 1%;
+  width: 50.47vw;
+  text-align: center;
+  margin-top: 1.2vw;
+}
+@media (max-width: 1100px) {
+  .Original .firstParagraph .bg .line .content .descr {
+    font-size: 2.5vw;
+    width: 70%;
+    margin-top: 2.5vw;
+  }
+}
+.Original .firstParagraph .bg .line .content .text {
+  color: rgb(70, 70, 70);
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1%;
+  width: 70.31vw;
+  text-align: center;
+  border-radius: 0.63vw;
+  background: rgb(255, 255, 255);
+  padding: 1.25vw 2.08vw 1.25vw 2.08vw;
+  margin-top: 1.2vw;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .Original .firstParagraph .bg .line .content .text {
+    padding: 2vw 2.08vw 2vw 2.08vw;
+    font-size: 2vw;
+    width: 60%;
+    border-radius: 1.5vw;
+    margin-top: 2.5vw;
+  }
+}
+.Original .secondParagraph {
+  margin-top: 6vw;
+}
+.Original .secondParagraph .nameSecondPrgrph {
+  color: rgb(43, 41, 41);
+  font-size: 2.08vw;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 1%;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .nameSecondPrgrph {
+    font-size: 4vw;
+  }
+}
+.Original .secondParagraph .points {
+  margin-top: 1.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.Original .secondParagraph .points .first {
+  margin-top: 1vw;
+  border-radius: 0.63vw;
+  background: rgb(239, 239, 239);
+  width: 43.5vw;
+  height: 11.88vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first {
+    width: 100%;
+    height: 40vw;
+    border-radius: 2.5vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent {
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent {
+    padding-top: 3.3vw;
+    padding-left: 17vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .firstString {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Original .secondParagraph .points .first .firstPointContent .firstString .number {
+  background: rgb(30, 188, 36);
+  padding: 0.26vw 0.78vw;
+  color: rgb(255, 255, 255);
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1%;
+  border-radius: 2.6vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .firstString .number {
+    font-size: 2.5vw;
+    padding: 0.26vw 1.4vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .firstString .nameFirst {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 1%;
+  margin-left: 1.3vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .firstString .nameFirst {
+    font-size: 2.6vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .descrFirst {
+  color: rgb(70, 70, 70);
+  font-size: 0.83vw;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 1%;
+  margin-left: 3.45vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .descrFirst {
+    font-size: 2.5vw;
+    margin-left: 0vw;
+    margin-top: 2vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .allImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3.4vw;
+  margin-top: 1.5vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg {
+    margin-left: 0vw;
+    margin-top: 3vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    right: 9.5vw;
+  }
+}
+@media (max-width: 900px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg {
+    right: 8.5vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .allImg .firstImg {
+  background-image: url("../../img/firstPointOrig.svg");
+  width: 16.9vw;
+  height: 3.85vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg .firstImg {
+    width: 51.4vw;
+    height: 12vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .allImg .allImgSecondStr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1vw;
+}
+.Original .secondParagraph .points .first .firstPointContent .allImg .allImgSecondStr .secondImg {
+  background-image: url("../../img/app-store.svg");
+  width: 8.7vw;
+  height: 2.5vw;
+  margin-left: 2.5vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg .allImgSecondStr .secondImg {
+    width: 25vw;
+    height: 7.3vw;
+    margin-left: 0vw;
+  }
+}
+.Original .secondParagraph .points .first .firstPointContent .allImg .allImgSecondStr .thirdImg {
+  background-image: url("../../img/google-play.svg");
+  width: 8.7vw;
+  height: 2.5vw;
+  margin-left: 1vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg .allImgSecondStr .thirdImg {
+    width: 25vw;
+    height: 7.1vw;
+  }
+}
+.Original .secondParagraph .points .second,
+.Original .secondParagraph .points .third,
+.Original .secondParagraph .points .fourth {
+  border-radius: 0.63vw;
+  background: rgb(239, 239, 239);
+  width: 43.5vw;
+  height: 11.88vw;
+  margin-top: 1vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second,
+  .Original .secondParagraph .points .third,
+  .Original .secondParagraph .points .fourth {
+    width: 100%;
+    height: 40vw;
+    border-radius: 2.5vw;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond,
+.Original .secondParagraph .points .third .contentSecond,
+.Original .secondParagraph .points .fourth .contentSecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second .contentSecond,
+  .Original .secondParagraph .points .third .contentSecond,
+  .Original .secondParagraph .points .fourth .contentSecond {
+    padding-top: 7vw;
+    padding-left: 17vw;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond .number,
+.Original .secondParagraph .points .third .contentSecond .number,
+.Original .secondParagraph .points .fourth .contentSecond .number {
+  background: rgb(30, 188, 36);
+  padding: 0.26vw 0.7vw;
+  height: 1.6vw;
+  color: rgb(255, 255, 255);
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1%;
+  border-radius: 2.6vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second .contentSecond .number,
+  .Original .secondParagraph .points .third .contentSecond .number,
+  .Original .secondParagraph .points .fourth .contentSecond .number {
+    font-size: 2.5vw;
+    padding: 0.26vw 1.3vw;
+    height: 3.45vw;
+    padding-right: 1.33vw;
+    padding-top: 0.4vw;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond .allText,
+.Original .secondParagraph .points .third .contentSecond .allText,
+.Original .secondParagraph .points .fourth .contentSecond .allText {
+  margin-left: 1.2vw;
+}
+.Original .secondParagraph .points .second .contentSecond .allText .nameSecond,
+.Original .secondParagraph .points .third .contentSecond .allText .nameSecond,
+.Original .secondParagraph .points .fourth .contentSecond .allText .nameSecond {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 600;
+  width: 16.2vw;
+  line-height: 130%;
+  letter-spacing: 1%;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second .contentSecond .allText .nameSecond,
+  .Original .secondParagraph .points .third .contentSecond .allText .nameSecond,
+  .Original .secondParagraph .points .fourth .contentSecond .allText .nameSecond {
+    font-size: 2.6vw;
+    width: 80%;
+    margin-top: 0.4vw;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond .allText .descrSecond,
+.Original .secondParagraph .points .third .contentSecond .allText .descrSecond,
+.Original .secondParagraph .points .fourth .contentSecond .allText .descrSecond {
+  color: rgb(70, 70, 70);
+  font-size: 0.83vw;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1%;
+  margin-top: 0.5vw;
+  width: 22.71vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second .contentSecond .allText .descrSecond,
+  .Original .secondParagraph .points .third .contentSecond .allText .descrSecond,
+  .Original .secondParagraph .points .fourth .contentSecond .allText .descrSecond {
+    font-size: 2.5vw;
+    margin-left: 0vw;
+    margin-top: 2vw;
+    width: 75%;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond .imgSecond,
+.Original .secondParagraph .points .third .contentSecond .imgSecond,
+.Original .secondParagraph .points .fourth .contentSecond .imgSecond {
+  background-image: url("../../img/box.svg");
+  width: 12.19vw;
+  height: 10.57vw;
+  background-size: cover;
+  margin-left: 2vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .second .contentSecond .imgSecond,
+  .Original .secondParagraph .points .third .contentSecond .imgSecond,
+  .Original .secondParagraph .points .fourth .contentSecond .imgSecond {
+    display: none;
+  }
+}
+.Original .secondParagraph .points .second .contentSecond .imgSecond .qrcode,
+.Original .secondParagraph .points .third .contentSecond .imgSecond .qrcode,
+.Original .secondParagraph .points .fourth .contentSecond .imgSecond .qrcode {
+  background-image: url("../../img/QRcode_A1 2.svg");
+  width: 4.4vw;
+  height: 4.4vw;
+  position: relative;
+  top: 4.55vw;
+  left: 1.3vw;
+  background-size: cover;
+}
+.Original .secondParagraph .points .third,
+.Original .secondParagraph .points .fourth {
+  margin-top: 1.2vw;
+}
+.Original .secondParagraph .points .phone {
+  background-image: url("../../img/Smart Phone.H02 1.svg");
+  width: 7.76vw;
+  height: 11.77vw;
+  background-size: cover;
+}
+.Original .secondParagraph .points .phone .sign {
+  background-image: url("../../img/firstPointOrig.svg");
+  width: 3vw;
+  height: 1.2vw;
+  background-size: cover;
+  position: relative;
+  top: 5vw;
+  left: 2.1vw;
+}
+.Original .secondParagraph .points .secondBox {
+  background-image: url("../../img/secondBox.svg");
+  width: 9vw;
+  height: 7.3vw;
+  background-size: cover;
+  position: relative;
+  left: 5vw;
+}
+@media (max-width: 1100px) {
+  .Original .secondParagraph .points .secondBox {
+    display: none;
+  }
+}
+.Original .secondParagraph .points .secondBox .checkmark {
+  background-image: url("../../img/Checkmark Green Metallic.H02 1.svg");
+  width: 12vw;
+  height: 12vw;
+  background-size: cover;
+  position: relative;
+  right: 7.5vw;
+  bottom: 1.8vw;
+}

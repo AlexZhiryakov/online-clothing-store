@@ -1,0 +1,279 @@
+.Popular {
+  margin-top: 5vw;
+}
+.Popular .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.Popular .firstLine .navigation .prev,
+.Popular .firstLine .navigation .next {
+  background: none;
+  border: none;
+}
+.Popular .firstLine .navigation .firstNavigation {
+  background-image: url("../../img/icon (1).svg");
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 700px) {
+  .Popular .firstLine .navigation .firstNavigation {
+    background-size: cover;
+    width: 6.7vw;
+    height: 6.7vw;
+  }
+}
+.Popular .firstLine .navigation .secondNavigation {
+  background-image: url("../../img/icon (2).svg");
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 700px) {
+  .Popular .firstLine .navigation .secondNavigation {
+    background-size: cover;
+    width: 6.7vw;
+    height: 6.7vw;
+  }
+}
+
+.allBottomCard .name {
+  font-size: 0.89vw;
+}
+@media (max-width: 1100px) {
+  .allBottomCard .name {
+    font-size: 3vw;
+    width: 30vw;
+  }
+}
+.allBottomCard .bottomInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.26vw;
+}
+.allBottomCard .bottomInfo .price {
+  margin-right: 0.52vw;
+  font-size: 1.04vw;
+  font-weight: bold;
+}
+@media (max-width: 1100px) {
+  .allBottomCard .bottomInfo .price {
+    font-size: 3.2vw;
+  }
+}
+.allBottomCard .bottomInfo .oldPrice {
+  margin-right: 0.52vw;
+  color: grey;
+  font-size: 0.9vw;
+}
+@media (max-width: 1100px) {
+  .allBottomCard .bottomInfo .oldPrice {
+    font-size: 1.9vw;
+  }
+}
+
+.namePopular {
+  margin-left: 0.52vw;
+  font-size: 32px;
+}
+@media (max-width: 1100px) {
+  .namePopular {
+    margin-left: 1vw;
+  }
+}
+@media (max-width: 700px) {
+  .namePopular {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .namePopular {
+    font-size: 15px;
+  }
+}
+
+.sale {
+  width: 2.65vw;
+  height: 1.46vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .sale {
+    width: 6vw;
+    height: 3.2vw;
+    margin-left: 1vw;
+  }
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1vw;
+}
+@media (max-width: 1100px) {
+  .block {
+    margin-left: 2.2vw;
+  }
+}
+@media (max-width: 900px) {
+  .block {
+    margin-left: 1.5vw;
+  }
+}
+@media (max-width: 700px) {
+  .block {
+    margin-left: 2.7vw;
+  }
+}
+@media (max-width: 500px) {
+  .block {
+    margin-left: 1.7vw;
+  }
+}
+@media (max-width: 350px) {
+  .block {
+    margin-left: 1.3vw;
+  }
+}
+.block .bgImg {
+  width: 20.47vw;
+  height: 25.77vw;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  margin-top: 1vw;
+}
+@media (max-width: 1100px) {
+  .block .bgImg {
+    width: 40vw;
+    height: 50vw;
+  }
+}
+.block .bgImg .addInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1vw;
+  margin-top: 0.6vw;
+}
+.block .bgImg .addInfo .heart {
+  width: 1.67vw;
+  height: 1.67vw;
+  opacity: 0%;
+  margin-right: 0.26vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .block .bgImg .addInfo .heart {
+    width: 3vw;
+    height: 3vw;
+    opacity: 100%;
+    margin-right: 1vw;
+  }
+}
+.block .bgImg .addInfo .bag {
+  width: 1.67vw;
+  height: 1.67vw;
+  opacity: 0%;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .block .bgImg .addInfo .bag {
+    width: 3vw;
+    height: 3vw;
+    opacity: 100%;
+  }
+}
+.block .bgImg .bgArea {
+  width: 21vw;
+  height: 2vw;
+  background: #000;
+}
+.block .bgImg:hover .heart {
+  opacity: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.block .bgImg:hover .bag {
+  opacity: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.firstMark {
+  margin-left: 0.78vw;
+  margin-top: 0.47vw;
+  background-size: cover;
+}
+.firstMark .mark {
+  height: 1.9vw;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  .firstMark .mark {
+    position: relative;
+    top: 0.5vw;
+    height: 2vw;
+    border-radius: 0.4vw;
+  }
+}
+
+#allBottomCard {
+  margin-top: 0.5vw;
+}
+
+#bottomCard {
+  margin-top: 0.8vw;
+}
+
+#allBlocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#block {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+  #block {
+    width: 45%;
+  }
+}
+@media (max-width: 700px) {
+  #block {
+    width: 38%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #bgImg {
+    width: 35vw;
+    height: 45vw;
+  }
+}

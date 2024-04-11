@@ -1,0 +1,120 @@
+.Footer {
+  .line {
+    border: 0.03vw solid rgb(225, 225, 225);
+    width: 100%;
+    margin-top: 8vw;
+  }
+  .lineTwo {
+    border: 0.03vw solid rgb(225, 225, 225);
+    width: 100%;
+    margin-top: 2vw;
+    @media (max-width: 700px) {
+      margin-top: 3vw;
+    }
+  }
+  .allColumns {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    margin-top: 2vw;
+    @media (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .firstColumn {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
+      background-image: url('../img/logoOGStyle.svg');
+      width: 18vw;
+      height: 2.8vw;
+      background-size: cover;
+      @media (max-width: 700px) {
+        width: 48.26vw;
+        height: 7.61vw;
+        margin-top: 3vw;
+      }
+    }
+    .text {
+      font-size: 0.83vw;
+      margin-top: 1vw;
+      @media (max-width: 700px) {
+        font-size: 3.5vw;
+        margin-top: 3vw;
+        width: 60vw;
+      }
+    }
+    .secondColumnAll {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-left: 10vw;
+      margin-top: -0.3vw;
+      @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0vw;
+        margin-top: 0.9vw;
+      }
+    }
+  }
+  .allLogos {
+    display: flex;
+    margin-top: 1vw;
+    @media (max-width: 700px) {
+      margin-top: 3vw;
+    }
+    .firstLogo {
+      background-image: url('../img/telegram-round.svg');
+      width: 1.67vw;
+      height: 1.67vw;
+      background-size: cover;
+      margin-right: 0.7vw;
+      @media (max-width: 700px) {
+        width: 7vw;
+        height: 7vw;
+      }
+    }
+    .secondLogo {
+      background-image: url('../img/whatsapp-round.svg');
+      width: 1.67vw;
+      height: 1.67vw;
+      background-size: cover;
+      @media (max-width: 700px) {
+        width: 7vw;
+        height: 7vw;
+      }
+    }
+  }
+  .endPage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 3vw;
+    }
+    div {
+      color: rgb(113, 105, 105);
+      font-size: 0.83vw;
+      font-weight: 400;
+      line-height: 120%;
+      letter-spacing: 1%;
+      @media (max-width: 700px) {
+        margin-top: 0.7vw;
+        font-size: 2vw;
+      }
+    }
+  }
+}
+.linePrivate {
+  border: 0.03vw solid rgb(225, 225, 225);
+  width: 100%;
+  display: none;
+  margin-top: 2vw;
+  @media (max-width: 700px) {
+    display: flex;
+    margin-top: 4vw;
+  }
+}

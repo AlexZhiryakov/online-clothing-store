@@ -1,0 +1,48 @@
+.Navigation {
+  margin-top: 1.3vw;
+}
+@media (max-width: 1100px) {
+  .Navigation {
+    position: relative;
+    bottom: 34px;
+  }
+}
+.Navigation .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.04vw;
+}
+@media (max-width: 1100px) {
+  .Navigation .location {
+    font-size: 11px;
+  }
+}
+.Navigation .location div {
+  margin-right: 0.52vw;
+}
+@media (max-width: 1100px) {
+  .Navigation .location div {
+    margin-right: 1vw;
+  }
+}
+.Navigation .location .main,
+.Navigation .location .slash {
+  text-decoration: none;
+  color: rgb(113, 105, 105);
+}
+.Navigation .location .locationNow {
+  cursor: pointer;
+}
+
+.anotherNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

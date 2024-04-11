@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.Header .header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .Header .header {
+    display: none;
+  }
+}
+.Header .header .leftHeader {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+@media (max-width: 1400px) {
+  .Header .header .leftHeader {
+    width: 80vw;
+  }
+}
+.Header .header .leftHeader .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Header .header .leftHeader .nav div {
+  margin-left: 2vw;
+}
+.Header .header .leftHeader .logo {
+  background-image: url("../img/logo.svg");
+  width: 197px;
+  height: 31px;
+}
+@media (max-width: 1280px) {
+  .Header .header .leftHeader .logo {
+    background-image: url("../img/logo new.svg");
+    width: 187px;
+    height: 27px;
+  }
+}
+.Header .header .leftHeader .paymentLink,
+.Header .header .leftHeader .exchangeLink,
+.Header .header .leftHeader .aboutLink,
+.Header .header .leftHeader .contactsLink,
+.Header .header .leftHeader .originalLink {
+  text-decoration: none;
+}
+.Header .header .leftHeader .paymentLink .navDiv,
+.Header .header .leftHeader .exchangeLink .navDiv,
+.Header .header .leftHeader .aboutLink .navDiv,
+.Header .header .leftHeader .contactsLink .navDiv,
+.Header .header .leftHeader .originalLink .navDiv {
+  color: #716969;
+  font-size: 1vw;
+}
+@media (max-width: 1400px) {
+  .Header .header .leftHeader .paymentLink .navDiv,
+  .Header .header .leftHeader .exchangeLink .navDiv,
+  .Header .header .leftHeader .aboutLink .navDiv,
+  .Header .header .leftHeader .contactsLink .navDiv,
+  .Header .header .leftHeader .originalLink .navDiv {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 1100px) {
+  .Header .header .leftHeader .paymentLink .navDiv,
+  .Header .header .leftHeader .exchangeLink .navDiv,
+  .Header .header .leftHeader .aboutLink .navDiv,
+  .Header .header .leftHeader .contactsLink .navDiv,
+  .Header .header .leftHeader .originalLink .navDiv {
+    font-size: 1.25vw;
+  }
+}
+.Header .header .leftHeader .paymentLink .navDiv:hover,
+.Header .header .leftHeader .exchangeLink .navDiv:hover,
+.Header .header .leftHeader .aboutLink .navDiv:hover,
+.Header .header .leftHeader .contactsLink .navDiv:hover,
+.Header .header .leftHeader .originalLink .navDiv:hover {
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.Header .header .rightHeader {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Header .header .rightHeader .wtsRound {
+  background-image: url("../img/whatsapp-round.svg");
+  width: 32px;
+  height: 32px;
+  margin-right: 1vw;
+}
+.Header .header .rightHeader .tgRound {
+  background-image: url("../img/telegram-round.svg");
+  width: 32px;
+  height: 32px;
+  margin-right: 1vw;
+}
+.Header .header .rightHeader .email {
+  margin-right: 1vw;
+  font-size: 1.1vw;
+  color: rgb(113, 105, 105);
+}
+.Header .header .rightHeader .emailImg {
+  background-image: url("../img/telegram-round (1).svg");
+  width: 32px;
+  height: 32px;
+  margin-right: 1vw;
+}
+.Header .header .phone {
+  font-size: 1.1vw;
+  color: rgb(113, 105, 5);
+}
+.Header .header .phoneImg {
+  background-image: url("../img/telegram-round (2).svg");
+  width: 32px;
+  height: 32px;
+}
+.Header .header .imgWidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

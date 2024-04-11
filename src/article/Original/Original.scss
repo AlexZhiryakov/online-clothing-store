@@ -1,0 +1,354 @@
+.Original {
+  margin-top: 2vw;
+  @media (max-width: 1100px) {
+    margin-top: 0vw;
+  }
+  .firstParagraph {
+    .bg {
+      border-radius: 12px;
+      background: rgb(255, 240, 186);
+      width: 100%;
+      height: 28.07vw;
+      overflow: hidden;
+      @media (max-width: 1100px) {
+        height: 55vw;
+      }
+      .line {
+        background-image: url('../../img/LineInOriginal.svg');
+        width: 110vw;
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        right: 7vw;
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 7vw;
+          margin-top: 1vw;
+          @media (max-width: 1100px) {
+            margin-top: 2vw;
+          }
+          @media (max-width: 420px) {
+            margin-right: 9vw;
+          }
+          .name {
+            color: rgb(43, 41, 41);
+            font-size: 2.5vw;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 1%;
+            margin-top: 2vw;
+            @media (max-width: 1100px) {
+              font-size: 3.5vw;
+            }
+          }
+          .descr {
+            color: rgb(70, 70, 70);
+            font-size: 1.25vw;
+            font-weight: 500;
+            letter-spacing: 1%;
+            width: 50.47vw;
+            text-align: center;
+            margin-top: 1.2vw;
+            @media (max-width: 1100px) {
+              font-size: 2.5vw;
+              width: 70%;
+              margin-top: 2.5vw;
+            }
+          }
+          .text {
+            color: rgb(70, 70, 70);
+            font-size: 1.25vw;
+            font-weight: 500;
+            line-height: 160%;
+            letter-spacing: 1%;
+            width: 70.31vw;
+            text-align: center;
+            border-radius: 0.63vw;
+            background: rgb(255, 255, 255);
+            padding: 1.25vw 2.08vw 1.25vw 2.08vw;
+            margin-top: 1.2vw;
+            text-align: center;
+            @media (max-width: 1100px) {
+              padding: 2vw 2.08vw 2vw 2.08vw;
+              font-size: 2vw;
+              width: 60%;
+              border-radius: 1.5vw;
+              margin-top: 2.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  .secondParagraph {
+    margin-top: 6vw;
+    .nameSecondPrgrph {
+      color: rgb(43, 41, 41);
+      font-size: 2.08vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 1%;
+      @media (max-width: 1100px) {
+        font-size: 4vw;
+      }
+    }
+    .points {
+      margin-top: 1.5vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
+      .first {
+        margin-top: 1vw;
+        border-radius: 0.63vw;
+        background: rgb(239, 239, 239);
+        width: 43.5vw;
+        height: 11.88vw;
+        @media (max-width: 1100px) {
+          width: 100%;
+          height: 40vw;
+          border-radius: 2.5vw;
+        }
+        .firstPointContent {
+          padding-top: 1.5vw;
+          padding-left: 1.5vw;
+          @media (max-width: 1100px) {
+            padding-top: 3.3vw;
+            padding-left: 17vw;
+          }
+          .firstString {
+            display: flex;
+            align-items: center;
+            .number {
+              background: rgb(30, 188, 36);
+              padding: 0.26vw 0.78vw;
+              color: rgb(255, 255, 255);
+              font-size: 1.25vw;
+              font-weight: 400;
+              line-height: 130%;
+              letter-spacing: 1%;
+              border-radius: 2.6vw;
+              @media (max-width: 1100px) {
+                font-size: 2.5vw;
+                padding: 0.26vw 1.4vw;
+              }
+            }
+            .nameFirst {
+              color: rgb(43, 41, 41);
+              font-size: 1.25vw;
+              font-weight: 600;
+              line-height: 130%;
+              letter-spacing: 1%;
+              margin-left: 1.3vw;
+              @media (max-width: 1100px) {
+                font-size: 2.6vw;
+              }
+            }
+          }
+          .descrFirst {
+            color: rgb(70, 70, 70);
+            font-size: 0.83vw;
+            font-weight: 400;
+            line-height: 110%;
+            letter-spacing: 1%;
+            margin-left: 3.45vw;
+            @media (max-width: 1100px) {
+              font-size: 2.5vw;
+              margin-left: 0vw;
+              margin-top: 2vw;
+            }
+          }
+          .allImg {
+            display: flex;
+            align-items: center;
+            margin-left: 3.4vw;
+            margin-top: 1.5vw;
+            @media (max-width: 1100px) {
+              margin-left: 0vw;
+              margin-top: 3vw;
+              flex-direction: column;
+              position: relative;
+              right: 9.5vw;
+            }
+            @media (max-width: 900px) {
+              right: 8.5vw;
+            }
+            .firstImg {
+              background-image: url('../../img/firstPointOrig.svg');
+              width: 16.9vw;
+              height: 3.85vw;
+              background-size: cover;
+              @media (max-width: 1100px) {
+                width: 51.4vw;
+                height: 12vw;
+              }
+            }
+            .allImgSecondStr {
+              display: flex;
+              align-items: center;
+              margin-top: 1vw;
+              .secondImg {
+                background-image: url('../../img/app-store.svg');
+                width: 8.7vw;
+                height: 2.5vw;
+                margin-left: 2.5vw;
+                background-size: cover;
+                @media (max-width: 1100px) {
+                  width: 25vw;
+                  height: 7.3vw;
+                  margin-left: 0vw;
+                }
+              }
+              .thirdImg {
+                background-image: url('../../img/google-play.svg');
+                width: 8.7vw;
+                height: 2.5vw;
+                margin-left: 1vw;
+                background-size: cover;
+                @media (max-width: 1100px) {
+                  width: 25vw;
+                  height: 7.1vw;
+                }
+              }
+            }
+          }
+        }
+      }
+      .second,
+      .third,
+      .fourth {
+        border-radius: 0.63vw;
+        background: rgb(239, 239, 239);
+        width: 43.5vw;
+        height: 11.88vw;
+        margin-top: 1vw;
+        @media (max-width: 1100px) {
+          width: 100%;
+          height: 40vw;
+          border-radius: 2.5vw;
+        }
+        .contentSecond {
+          display: flex;
+          padding-top: 1.5vw;
+          padding-left: 1.5vw;
+          @media (max-width: 1100px) {
+            padding-top: 7vw;
+            padding-left: 17vw;
+          }
+          .number {
+            background: rgb(30, 188, 36);
+            padding: 0.26vw 0.7vw;
+            height: 1.6vw;
+            color: rgb(255, 255, 255);
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: 1%;
+            border-radius: 2.6vw;
+            @media (max-width: 1100px) {
+              font-size: 2.5vw;
+              padding: 0.26vw 1.3vw;
+              height: 3.45vw;
+              padding-right: 1.33vw;
+              padding-top: 0.4vw;
+            }
+          }
+          .allText {
+            margin-left: 1.2vw;
+            .nameSecond {
+              color: rgb(43, 41, 41);
+              font-size: 1.25vw;
+              font-weight: 600;
+              width: 16.2vw;
+              line-height: 130%;
+              letter-spacing: 1%;
+              @media (max-width: 1100px) {
+                font-size: 2.6vw;
+                width: 80%;
+                margin-top: 0.4vw;
+              }
+            }
+            .descrSecond {
+              color: rgb(70, 70, 70);
+              font-size: 0.83vw;
+              font-weight: 400;
+              line-height: 140%;
+              letter-spacing: 1%;
+              margin-top: 0.5vw;
+              width: 22.71vw;
+              @media (max-width: 1100px) {
+                font-size: 2.5vw;
+                margin-left: 0vw;
+                margin-top: 2vw;
+                width: 75%;
+              }
+            }
+          }
+          .imgSecond {
+            background-image: url('../../img/box.svg');
+            width: 12.19vw;
+            height: 10.57vw;
+            background-size: cover;
+            margin-left: 2vw;
+            @media (max-width: 1100px) {
+              display: none;
+            }
+            .qrcode {
+              background-image: url('../../img/QRcode_A1\ 2.svg');
+              width: 4.4vw;
+              height: 4.4vw;
+              position: relative;
+              top: 4.55vw;
+              left: 1.3vw;
+              background-size: cover;
+            }
+          }
+        }
+      }
+      .third,
+      .fourth {
+        margin-top: 1.2vw;
+      }
+      .phone {
+        background-image: url('../../img/Smart\ Phone.H02\ 1.svg');
+        width: 7.76vw;
+        height: 11.77vw;
+        background-size: cover;
+
+        .sign {
+          background-image: url('../../img/firstPointOrig.svg');
+          width: 3vw;
+          height: 1.2vw;
+          background-size: cover;
+          position: relative;
+          top: 5vw;
+          left: 2.1vw;
+        }
+      }
+      .secondBox {
+        background-image: url('../../img/secondBox.svg');
+        width: 9vw;
+        height: 7.3vw;
+        background-size: cover;
+        position: relative;
+        left: 5vw;
+        @media (max-width: 1100px) {
+          display: none;
+        }
+        .checkmark {
+          background-image: url('../../img/Checkmark\ Green\ Metallic.H02\ 1.svg');
+          width: 12vw;
+          height: 12vw;
+          background-size: cover;
+          position: relative;
+          right: 7.5vw;
+          bottom: 1.8vw;
+        }
+      }
+    }
+  }
+}

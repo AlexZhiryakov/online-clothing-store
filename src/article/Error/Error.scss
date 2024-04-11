@@ -1,0 +1,26 @@
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vw;
+  .errorImg {
+    background-image: url('../../img/404.svg');
+    width: 30.47vw;
+    height: 17.29vw;
+    background-size: cover;
+  }
+  .errorText {
+    color: rgb(113, 105, 105);
+    font-size: 1.04vw;
+  }
+  .errorButton {
+    text-decoration: none;
+    margin-top: 1vw;
+    font-size: 0.83vw;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 0.8vw 3.2vw;
+    border-radius: 1vw;
+  }
+}

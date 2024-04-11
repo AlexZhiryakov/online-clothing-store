@@ -1,0 +1,561 @@
+body {
+  overflow-x: hidden;
+}
+
+.Sale {
+  margin-top: 7vw;
+  width: 100%;
+}
+.Sale .nameSale {
+  font-size: 2.08vw;
+}
+@media (max-width: 700px) {
+  .Sale .nameSale {
+    font-size: 20px;
+  }
+}
+.Sale .allColumns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+.Sale .allColumns .firstColumn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn {
+    width: 100%;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 23.5vw;
+  border-radius: 0.63vw;
+  background-color: rgb(239, 239, 239);
+  overflow: hidden;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .sneakers {
+    margin-top: 2vw;
+    width: 100%;
+    height: 35vw;
+    border-radius: 4vw;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers .column {
+  margin-left: 1vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .sneakers .column {
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers .column .nameFirstInFirstColumn {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 150%;
+  font-weight: bold;
+  margin-top: 1.5vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .sneakers .column .nameFirstInFirstColumn {
+    font-size: 5vw;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers .column .priceFirstInFirstColumn {
+  background-color: #fff;
+  width: 4.53vw;
+  height: 1.04vw;
+  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  border-radius: 0.63vw;
+  font-weight: bold;
+  margin-top: 16.7vw;
+  font-size: 0.8vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .sneakers .column .priceFirstInFirstColumn {
+    font-size: 3.2vw;
+    width: 18vw;
+    height: 5vw;
+    padding: 1vw 3vw 0.3vw 3.5vw;
+    border-radius: 1.5vw;
+    margin-top: 12vw;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers .sneaker {
+  background-image: url("../../img/sneakerDisp.svg");
+  width: 35vw;
+  height: 19vw;
+  background-size: cover;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .sneakers .sneaker {
+    width: 50.23vw;
+    height: 30.67vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+  }
+}
+.Sale .allColumns .firstColumn .sneakers:hover {
+  background-color: rgb(205, 204, 204);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.Sale .allColumns .firstColumn .delivery {
+  margin-top: 1vw;
+  width: 100%;
+  height: 16.67vw;
+  border-radius: 0.63vw;
+  background: rgb(255, 240, 186);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery {
+    width: 100%;
+    height: 35vw;
+    border-radius: 4vw;
+    margin-top: 2vw;
+  }
+}
+.Sale .allColumns .firstColumn .delivery .deliveryColumn {
+  margin-top: 4vw;
+  margin-left: 2vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery .deliveryColumn {
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+}
+.Sale .allColumns .firstColumn .delivery .deliveryColumn .nameDelivery {
+  color: rgb(43, 41, 41);
+  font-size: 1.67vw;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 1%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery .deliveryColumn .nameDelivery {
+    font-size: 6vw;
+    width: 90vw;
+  }
+}
+.Sale .allColumns .firstColumn .delivery .deliveryColumn .descriptionDelivery {
+  margin-top: 1vw;
+  color: rgb(70, 70, 70);
+  font-size: 0.83vw;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery .deliveryColumn .descriptionDelivery {
+    font-size: 3.5vw;
+    width: 80vw;
+    margin-top: 5vw;
+  }
+}
+.Sale .allColumns .firstColumn .delivery .deliveryColumn .butDelivery {
+  margin-top: 1.4vw;
+  background-color: #fff;
+  border: none;
+  width: 6.98vw;
+  height: 2.5vw;
+  border-radius: 0.63vw;
+  padding-left: 1.4vw;
+  padding-top: 0.7vw;
+  color: rgb(43, 41, 41);
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery .deliveryColumn .butDelivery {
+    display: none;
+  }
+}
+.Sale .allColumns .firstColumn .delivery .deliveryColumn .butDelivery:hover {
+  background-color: rgb(244, 242, 242);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.Sale .allColumns .firstColumn .delivery .route {
+  background-image: url("../../img/square.svg");
+  width: 12.76vw;
+  height: 12.76vw;
+  margin-top: 2vw;
+  margin-left: 5vw;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .firstColumn .delivery .route {
+    display: none;
+  }
+}
+.Sale .allColumns .secondColumn {
+  margin-left: 2%;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn {
+    margin-left: 0vw;
+    width: 100%;
+  }
+}
+.Sale .allColumns .secondColumn .firstString {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+  grid-template-columns: 45% 55%;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92%;
+  height: 16.67vw;
+  margin-left: 4.2%;
+  border-radius: 0.63vw;
+  background: rgb(239, 239, 239);
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .trousers {
+    width: 100%;
+    height: 35vw;
+    border-radius: 4vw;
+    margin-top: 2vw;
+    margin-left: 0%;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers .trousersColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn {
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .nameTrousers {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 150%;
+  font-weight: bold;
+  margin-top: 1vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .nameTrousers {
+    font-size: 5vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .priceTrousers {
+  margin-top: 10vw;
+  color: rgb(43, 41, 41);
+  font-size: 1.04vw;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  width: 5.9vw;
+  border-radius: 0.63vw;
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .priceTrousers {
+    font-size: 3.2vw;
+    width: 18vw;
+    height: 5vw;
+    padding: 0.8vw 3vw;
+    border-radius: 1.5vw;
+    margin-top: 12vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers .bgTrousers {
+  background-image: url("../../img/trousers.svg");
+  width: 13.23vw;
+  height: 16.67vw;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .trousers .bgTrousers {
+    width: 40.23vw;
+    height: 49.67vw;
+    margin-top: -15vw;
+    margin-left: 15vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .trousers:hover {
+  background-color: rgb(205, 204, 204);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.Sale .allColumns .secondColumn .firstString .tshirt {
+  width: 100%;
+  height: 16.67vw;
+  border-radius: 0.63vw;
+  background: rgb(239, 239, 239);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -2;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .tshirt {
+    margin-left: 0vw;
+    margin-top: 1vw;
+    width: 100%;
+    height: 35vw;
+    border-radius: 4vw;
+    margin-top: 2vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2vw;
+  width: 20%;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt {
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt .nameTShirt {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 150%;
+  font-weight: bold;
+  margin-top: 1vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt .nameTShirt {
+    font-size: 5vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt .priceTShirt {
+  margin-top: 10vw;
+  color: rgb(43, 41, 41);
+  font-size: 1.04vw;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  width: 5.9vw;
+  border-radius: 0.63vw;
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt .priceTShirt {
+    font-size: 3.2vw;
+    width: 18vw;
+    height: 5vw;
+    padding: 0.8vw 3vw;
+    border-radius: 1.5vw;
+    margin-top: 12vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .tshirt .bgTShirt {
+  background-image: url("../../img/tshirt.svg");
+  width: 13vw;
+  height: 15vw;
+  background-size: cover;
+  margin-top: 3vw;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .firstString .tshirt .bgTShirt {
+    width: 40.23vw;
+    height: 49.67vw;
+    margin-top: 0vw;
+    margin-left: 19vw;
+  }
+}
+.Sale .allColumns .secondColumn .firstString .tshirt:hover {
+  background-color: rgb(205, 204, 204);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.Sale .allColumns .secondColumn .secondString {
+  width: 100%;
+}
+.Sale .allColumns .secondColumn .secondString .hoody {
+  margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  height: 23.33vw;
+  border-radius: 0.63vw;
+  background: rgb(239, 239, 239);
+  z-index: -1;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .secondString .hoody {
+    width: 100%;
+    height: 35vw;
+    border-radius: 4vw;
+    margin-top: 2vw;
+  }
+}
+.Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2vw;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn {
+    margin-left: 4vw;
+    margin-top: 3vw;
+  }
+}
+.Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn .nameHoody {
+  color: rgb(43, 41, 41);
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 150%;
+  font-weight: bold;
+  margin-top: 1vw;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn .nameHoody {
+    font-size: 5vw;
+  }
+}
+.Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn .priceHoody {
+  margin-top: 16.5vw;
+  color: rgb(43, 41, 41);
+  font-size: 1.04vw;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  width: 5.9vw;
+  border-radius: 0.63vw;
+  background: rgb(255, 255, 255);
+  font-weight: bold;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn .priceHoody {
+    font-size: 3.2vw;
+    width: 18vw;
+    height: 5vw;
+    padding: 0.8vw 3vw;
+    border-radius: 1.5vw;
+    margin-top: 12vw;
+  }
+}
+.Sale .allColumns .secondColumn .secondString .hoody .bgHoody {
+  background-image: url("../../img/hoody.svg");
+  width: 100%;
+  height: 23vw;
+  background-size: cover;
+  margin-top: 3vw;
+  margin-left: -3vw;
+  z-index: 2;
+  background-size: cover;
+  margin-top: 0.4vw;
+  margin-left: 6vw;
+}
+@media (max-width: 700px) {
+  .Sale .allColumns .secondColumn .secondString .hoody .bgHoody {
+    width: 40.23vw;
+    height: 49.67vw;
+    margin-top: 0vw;
+    margin-left: 13vw;
+  }
+}
+.Sale .allColumns .secondColumn .secondString .hoody:hover {
+  background-color: rgb(205, 204, 204);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}

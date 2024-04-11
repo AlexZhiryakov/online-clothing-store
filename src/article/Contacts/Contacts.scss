@@ -1,0 +1,108 @@
+.Contacts {
+  margin-top: 4vw;
+  @media (max-width: 1100px) {
+    margin-top: 0vw;
+  }
+  .ContactsFlex {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+    }
+    .firstContactsFlex {
+      .name {
+        margin: 0;
+        color: rgb(43, 41, 41);
+        font-size: 1.67vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 1%;
+        @media (max-width: 1100px) {
+          font-size: 5vw;
+          margin-top: 7vw;
+        }
+      }
+      .allInfo {
+        margin-top: 2vw;
+        .firstColumn {
+          margin-top: 5vw;
+          .city {
+            color: rgb(43, 41, 41);
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 1%;
+            text-align: left;
+            text-transform: uppercase;
+            @media (max-width: 1100px) {
+              font-size: 3.5vw;
+            }
+          }
+          .location {
+            color: rgb(70, 70, 70);
+            font-size: 0.83vw;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 1%;
+            margin-top: 0.5vw;
+            @media (max-width: 1100px) {
+              font-size: 2.5vw;
+            }
+          }
+          .line {
+            margin-top: 0.7vw;
+            border: 0.05vw solid rgb(225, 225, 225);
+            width: 36.72vw;
+            @media (max-width: 1100px) {
+              width: 100%;
+            }
+          }
+          .firstColInfo {
+            display: flex;
+            .firstColFirstInfo {
+              .text {
+                color: rgb(43, 41, 41);
+                font-size: 0.83vw;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 1%;
+                width: 17.56vw;
+                margin-top: 0.7vw;
+                @media (max-width: 1100px) {
+                  font-size: 2.8vw;
+                  width: 30vw;
+                }
+              }
+            }
+            .firstColsecondInfo {
+              .text {
+                color: rgb(43, 41, 41);
+                font-size: 0.83vw;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 1%;
+                width: 20.56vw;
+                margin-top: 0.7vw;
+                @media (max-width: 1100px) {
+                  font-size: 2.8vw;
+                  width: 45vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .secondColumn {
+      background-image: url('../../img/Contacts.svg');
+      width: 44.27vw;
+      height: 31.72vw;
+      background-size: cover;
+      @media (max-width: 1100px) {
+        width: 100%;
+        height: 60.72vw;
+        border-radius: 1.5vw;
+      }
+    }
+  }
+}
