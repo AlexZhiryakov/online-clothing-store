@@ -240,7 +240,7 @@ function Slide({ item }) {
         <Link
           className="bgImg"
           style={bgStyle}
-          to={`/${id}`}
+          to={`${id}`}
           onClick={() => openProduct()}
         >
           <div className="firstMark">

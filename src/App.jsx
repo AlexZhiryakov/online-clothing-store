@@ -11,12 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
         <Header />
         <Nav />
         {stateBurger === false ? <Main /> : null}
         <Footer />
-      </BrowserRouter>
     </div>
   );
 }
