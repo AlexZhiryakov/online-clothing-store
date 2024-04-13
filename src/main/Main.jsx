@@ -1,5 +1,5 @@
 import React from 'react';
-import FirstSection from './FirstSection/newCollection';
+import FirstSection from './FirstSection/NewCollection';
 import SecondSection from './SecondSection/Popular';
 import ThirdSection from './ThirdSection/ThirdSection';
 import FourthSection from './FourthSection/Sale';
@@ -10,14 +10,6 @@ import './Main.css';
 function Main() {
   let location = useLocation();
   const getID = JSON.parse(localStorage.getItem('productDetails'));
-
-  // const checkID = () => {
-  //   if (getID !== null) {
-  //     return ;
-  //   } else {
-  //     return false;
-  //   }
-  // };
 
   return (
     <div className="Main">
