@@ -68,7 +68,6 @@
         border-radius: 0.63vw;
         background: rgb(255, 255, 255);
         width: 16vw;
-        // height: 2.7vw;
         color: rgb(43, 41, 41);
         font-size: 1.3vw;
         font-weight: 400;
@@ -83,9 +82,10 @@
           margin-top: 1.2vw;
         }
         @media (max-width: 700px) {
-          margin-top: 2.5vw;
-          font-size: 1.9vw;
-          width: 18vw;
+          padding: 1.5vw 0;
+          margin-top: 3vw;
+          font-size: 2vw;
+          width: 22vw;
         }
       }
     }

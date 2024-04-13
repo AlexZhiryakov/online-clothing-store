@@ -33,7 +33,7 @@ function RouterNav() {
         <Route path="/trousers" element={<Trousers />} />
         <Route path="/shorts" element={<Shorts />} />
         <Route path="/hoodies" element={<Hoodies />} />
-        <Route path="/accessories" element={''} />
+        <Route path="/accessories" element={<Error />} />
         <Route path="/search" element={<Search />} />
         <Route path="/heart" element={<Liked />} />
         <Route path="/bag" element={<Bag />} />

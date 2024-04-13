@@ -10,6 +10,10 @@
       flex-direction: column-reverse;
     }
     .firstContactsFlex {
+      margin-top: 5vw;
+      @media (max-width: 1100px) {
+        margin-top: 0vw;
+      }
       .name {
         margin: 0;
         color: rgb(43, 41, 41);
@@ -94,7 +98,7 @@
       }
     }
     .secondColumn {
-      background-image: url('../../img/Contacts.svg');
+      background-image: url('../../img/contactss.png');
       width: 44.27vw;
       height: 31.72vw;
       background-size: cover;

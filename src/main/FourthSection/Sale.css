@@ -28,10 +28,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
   }
 }
@@ -161,8 +157,8 @@ body {
 }
 @media (max-width: 700px) {
   .Sale .allColumns .firstColumn .delivery .deliveryColumn {
-    margin-left: 4vw;
-    margin-top: 3vw;
+    margin-left: 5vw;
+    margin-top: 4.5vw;
   }
 }
 .Sale .allColumns .firstColumn .delivery .deliveryColumn .nameDelivery {

@@ -102,9 +102,10 @@
 }
 @media (max-width: 700px) {
   .newCollection .bgNewCollection .newCollectionFirstColumn .buttonSlide {
-    margin-top: 2.5vw;
-    font-size: 1.9vw;
-    width: 18vw;
+    padding: 1.5vw 0;
+    margin-top: 3vw;
+    font-size: 2vw;
+    width: 22vw;
   }
 }
 .newCollection .bgNewCollection .newCollectionSecondColumn {

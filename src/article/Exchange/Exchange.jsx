@@ -38,7 +38,7 @@ function Exchange() {
             </div>
           </div>
           <div className="thirdPoint">
-            <div className="thirdContent">
+            <div className="thirdContent" id='thirdContent'>
               <div className="firstString">
                 <div className="imgPointThird"></div>
                 <div className="namePoint">Отправить неподошедший товар</div>

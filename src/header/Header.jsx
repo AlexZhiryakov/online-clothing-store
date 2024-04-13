@@ -14,7 +14,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="Header">
+    <div className="Header" id='Header'>
       <div className="header">
         <div className="leftHeader">
           <div className="logo"></div>

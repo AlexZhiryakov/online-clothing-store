@@ -41,7 +41,15 @@ function Slide({ item }) {
   const liked = useSelector((state) => state.cart.liked);
   const newTotalPrice = useSelector((state) => state.cart.newTotalPrice);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const getPrice = JSON.parse(localStorage.getItem('newTotalPrice'))
+    if (getPrice === null) {
+      localStorage.setItem('newTotalPrice', JSON.stringify([]))
+      localStorage.setItem('itemList', JSON.stringify([]))
+    } else {
+      console.log('ошибка')
+    }
+  }, [])
 
   const toggleLiked = (e) => {
     console.log('сработало');
@@ -224,7 +232,7 @@ function Slide({ item }) {
       })
     );
     const scroll = () => {
-      const element = document.getElementById();
+      const element = document.getElementById('Header');
       element.scrollIntoView({ behavior: 'smooth' });
     };
     scroll();

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function SlideCollection() {
   const scroll = () => {
-    const element = document.getElementById();
+    const element = document.getElementById('Header');
     element.scrollIntoView({ behavior: 'smooth' });
   };
   return (

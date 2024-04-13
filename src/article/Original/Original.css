@@ -236,7 +236,22 @@
 }
 @media (max-width: 900px) {
   .Original .secondParagraph .points .first .firstPointContent .allImg {
-    right: 8.5vw;
+    right: 9vw;
+  }
+}
+@media (max-width: 700px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg {
+    right: 11.5vw;
+  }
+}
+@media (max-width: 500px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg {
+    right: 10vw;
+  }
+}
+@media (max-width: 350px) {
+  .Original .secondParagraph .points .first .firstPointContent .allImg {
+    right: 9vw;
   }
 }
 .Original .secondParagraph .points .first .firstPointContent .allImg .firstImg {
@@ -294,7 +309,7 @@
   background: rgb(239, 239, 239);
   width: 43.5vw;
   height: 11.88vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 @media (max-width: 1100px) {
   .Original .secondParagraph .points .second,

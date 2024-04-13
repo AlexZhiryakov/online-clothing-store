@@ -2,9 +2,6 @@ import bestSale from '../img/bestSale.svg';
 import hitSeason from '../img/хитСезона.svg';
 import top from '../img/топПродаж.svg';
 
-import firstSkeakers from '../img/firstt.svg';
-import secondSkeakers from '../img/secondd.svg';
-
 import firstSale from '../img/firstSale.svg';
 import secondSale from '../img/18.svg';
 import thirdSale from '../img/10.svg';
@@ -50,7 +47,6 @@ const fakeData = [
   {
     id: '1',
     category: 'hoody',
-    mark: bestSale,
     img: blueHoodyFirst,
     imgSecond: blueHoodySecond,
     imgThird: blueHoodyThird,
@@ -60,7 +56,7 @@ const fakeData = [
     oldPrice: 10490,
     sale: firstSale,
     quantity: 1,
-    widthMark: '8.5vw',
+    widthMark: '10.2vw',
     size: {
       first: 'S',
       second: 'M',
@@ -74,7 +70,7 @@ const fakeData = [
   {
     id: '2',
     category: 'sneakers',
-    mark: hitSeason,
+    mark: bestSale,
     img: greenShoesFirst,
     imgSecond: greenShoesSecond,
     imgThird: greenShoesThird,
@@ -84,7 +80,7 @@ const fakeData = [
     oldPrice: 12990,
     sale: secondSale,
     quantity: 1,
-    widthMark: '7.4vw',
+    widthMark: '10.2vw',
     size: {
       first: '39',
       second: '40',
@@ -109,7 +105,7 @@ const fakeData = [
     oldPrice: 13749,
     sale: thirdSale,
     quantity: 1,
-    widthMark: '7.9vw',
+    widthMark: '9.48vw',
     size: {
       first: '39',
       second: '40',
@@ -129,12 +125,12 @@ const fakeData = [
     imgSecond: brownTrousersSecond,
     imgThird: brownTrousersThird,
     imgFour: brownTrousersFour,
-    name: 'High-Waisted Loose Woven Cargo Pants',
+    name: 'High-Waisted Loose Women Cargo Pants',
     price: 7990,
     oldPrice: 9290,
     sale: fourSale,
     quantity: 1,
-    widthMark: '7.4vw',
+    widthMark: '8.88vw',
     size: {
       first: 'S',
       second: 'M',
@@ -148,7 +144,6 @@ const fakeData = [
   {
     id: '5',
     category: 'hoody',
-    mark: bestSale,
     img: pinkHoodyFirst,
     imgSecond: pinkHoodySecond,
     imgThird: pinkHoodyThird,
@@ -158,7 +153,7 @@ const fakeData = [
     oldPrice: 7659,
     sale: fourSale,
     quantity: 1,
-    widthMark: '8.5vw',
+    widthMark: '10.2vw',
     size: {
       first: 'S',
       second: 'M',
@@ -182,7 +177,7 @@ const fakeData = [
     oldPrice: 9990,
     sale: thirdSale,
     quantity: 1,
-    widthMark: '7.9vw',
+    widthMark: '9.48vw',
     size: {
       first: 'S',
       second: 'M',

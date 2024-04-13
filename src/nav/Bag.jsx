@@ -222,12 +222,6 @@ function Bag() {
                       -
                     </button>
                   )}
-                  {/* <button
-                    className="removeQuantity"
-                    onClick={() => removeQuantityFunc(product.name, product.id)}
-                  >
-                    -
-                  </button> */}
                   {product.selectedSize ? (
                     <div className="allQuantity">
                       {allQuantity(
@@ -272,12 +266,6 @@ function Bag() {
                       +
                     </button>
                   )}
-                  {/* <button
-                    className="addQuantity"
-                    onClick={() => addQuantityFunc(product.name, product.price)}
-                  >
-                    +
-                  </button> */}
                 </div>
               </div>
               <div className="allPrice">

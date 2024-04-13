@@ -175,7 +175,16 @@
               right: 9.5vw;
             }
             @media (max-width: 900px) {
-              right: 8.5vw;
+              right: 9vw;
+            }
+            @media (max-width: 700px) {
+              right: 11.5vw;
+            }
+            @media (max-width: 500px) {
+              right: 10vw;
+            }
+            @media (max-width: 350px) {
+              right: 9vw;
             }
             .firstImg {
               background-image: url('../../img/firstPointOrig.svg');
@@ -225,7 +234,7 @@
         background: rgb(239, 239, 239);
         width: 43.5vw;
         height: 11.88vw;
-        margin-top: 1vw;
+        margin-top: 2vw;
         @media (max-width: 1100px) {
           width: 100%;
           height: 40vw;

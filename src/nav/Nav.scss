@@ -100,13 +100,17 @@
     background-color: rgb(247, 245, 245);
     border-radius: 1.56vw;
     @media (max-width: 1500px) {
-      grid-template-columns: 30vw 27vw 17vw 1fr;
+      grid-template-columns: 25vw 27vw 20vw 1fr;
     }
     @media (max-width: 1320px) {
-      grid-template-columns: 32vw 25vw 15vw 1fr;
+      grid-template-columns: 25vw 27vw 20vw 1fr;
     }
     @media (max-width: 1100px) {
       border-radius: 2.56vw;
+      grid-template-columns: 32vw 23vw 16.5vw 1fr;
+    }
+    @media (max-width: 700px) {
+      grid-template-columns: 32vw 21.5vw 18vw 1fr;
     }
     .productImg {
       width: 20.47vw;
@@ -131,9 +135,9 @@
         border-radius: 1.2vw;
       }
       @media (max-width: 700px) {
-        margin-top: 3.5vw;
-        width: 12vw;
-        height: 3.5vw;
+        margin-top: 4.3vw;
+        width: 14vw;
+        height: 4vw;
       }
       .addQuantity,
       .removeQuantity {
@@ -145,7 +149,8 @@
           font-size: 1.7vw;
         }
         @media (max-width: 700px) {
-          font-size: 2.5vw;
+          font-size: 3.5vw;
+          margin-top: -0.4vw;
         }
       }
       .allQuantity {
@@ -159,6 +164,9 @@
         }
         @media (max-width: 700px) {
           font-size: 2vw;
+          margin-top: 0.8vw;
+          margin-left: 1.5vw;
+          margin-right: 1.5vw;
         }
       }
     }
@@ -176,6 +184,9 @@
         margin-top: 3.7vw;
         font-size: 2.5vw;
       }
+      @media (max-width: 700px) {
+        font-size: 3vw;
+      }
     }
     .oldPrice {
       font-size: 1.1vw;
@@ -184,6 +195,9 @@
       @media (max-width: 1100px) {
         font-size: 1.5vw;
         margin-left: 0.2vw;
+      }
+      @media (max-width: 700px) {
+        font-size: 1.9vw;
       }
       @media (max-width: 500px) {
         position: relative;
@@ -205,7 +219,7 @@
     border-radius: 1.04vw;
     @media (max-width: 1100px) {
       width: 35%;
-      height: 13vw;
+      height: 15vw;
     }
     .totalPriceLine {
       display: flex;
@@ -222,13 +236,13 @@
         font-size: 1.2vw;
         margin-left: 0.5vw;
         @media (max-width: 1100px) {
-          font-size: 1.7vw;
+          font-size: 1.9vw;
         }
       }
       .totalPrice {
         font-size: 1.2vw;
         @media (max-width: 1100px) {
-          font-size: 2vw;
+          font-size: 2.2vw;
         }
       }
     }
@@ -245,9 +259,9 @@
       @media (max-width: 1100px) {
         width: 82.7%;
         margin-left: 3vw;
-        height: 3.5vw;
-        font-size: 1.8vw;
-        border-radius: 0.5vw;
+        height: 5vw;
+        font-size: 2vw;
+        border-radius: 0.8vw;
       }
     }
   }
@@ -329,8 +343,9 @@
       border: none;
       margin-right: 2.5vw;
       @media (max-width: 1100px) {
+        margin-top: 2vw;
         font-size: 1.8vw;
-        padding: 0.8vw 2vw;
+        padding: 1.3vw 2.5vw;
         border-radius: 1vw;
         margin-right: 6.5vw;
         border: none;
@@ -352,8 +367,9 @@
   font-size: 1.1vw;
   border: none;
   @media (max-width: 1100px) {
+    margin-top: 2vw;
     font-size: 1.8vw;
-    padding: 0.8vw 2vw;
+    padding: 1.3vw 2.5vw;
     border-radius: 1vw;
     margin-right: 4vw;
     border: none;
@@ -371,7 +387,7 @@
   color: rgb(113, 105, 105);
   font-size: 1.1vw;
   @media (max-width: 1100px) {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 }
 .bottomInfo {
@@ -409,6 +425,9 @@
     text-align: center;
     text-align: center;
     font-size: 2vw;
+    @media (max-width: 1100px) {
+      font-size: 3vw;
+    }
   }
   .allInput {
     margin-left: 33.5%;
@@ -421,8 +440,8 @@
       margin-top: 3vw;
     }
     @media (max-width: 700px) {
-      width: 50%;
-      margin-left: 25%;
+      width: 60%;
+      margin-left: 20%;
       margin-top: 4vw;
       border-radius: 1.3vw;
     }
@@ -455,9 +474,9 @@
         width: 30vw;
       }
       @media (max-width: 700px) {
-        font-size: 1.7vw;
-        width: 35vw;
-        padding: 1vw 1.5vw;
+        font-size: 2vw;
+        width: 44vw;
+        padding: 2vw 1.5vw;
       }
     }
     .clearSearch {
@@ -646,7 +665,7 @@ h2 {
     font-size: 1.8vw;
     width: 20.83vw;
     @media (max-width: 700px) {
-      font-size: 2vw;
+      font-size: 2.4vw;
       width: 15vw;
     }
   }
@@ -660,6 +679,9 @@ h2 {
       font-weight: 400;
       line-height: 140%;
       letter-spacing: 1%;
+      @media (max-width: 1100px) {
+        font-size: 1.3vw;
+      }
     }
     .productSize {
       margin-left: 0.5vw;
@@ -668,6 +690,10 @@ h2 {
       font-weight: 400;
       line-height: 140%;
       letter-spacing: 1%;
+      @media (max-width: 1100px) {
+        margin-left: 1vw;
+        font-size: 1.7vw;
+      }
     }
   }
   .lineColor {
@@ -680,6 +706,9 @@ h2 {
       font-weight: 400;
       line-height: 140%;
       letter-spacing: 1%;
+      @media (max-width: 1100px) {
+        font-size: 1.3vw;
+      }
     }
     .brown {
       width: 1.46vw;
@@ -687,6 +716,11 @@ h2 {
       background-size: cover;
       background-image: url('../img/brown.svg');
       margin-left: 0.5vw;
+      @media (max-width: 1100px) {
+        margin-left: 1vw;
+        width: 2vw;
+        height: 2vw;
+      }
     }
     .blue {
       width: 1.46vw;
@@ -694,6 +728,11 @@ h2 {
       background-size: cover;
       background-image: url('../img/blue.svg');
       margin-left: 0.5vw;
+      @media (max-width: 1100px) {
+        margin-left: 1vw;
+        width: 2vw;
+        height: 2vw;
+      }
     }
     .green {
       width: 1.46vw;
@@ -701,6 +740,11 @@ h2 {
       background-size: cover;
       background-image: url('../img/green.svg');
       margin-left: 0.5vw;
+      @media (max-width: 1100px) {
+        margin-left: 1vw;
+        width: 2vw;
+        height: 2vw;
+      }
     }
     .pink {
       width: 1.46vw;
@@ -708,6 +752,11 @@ h2 {
       background-size: cover;
       background-image: url('../img/pink.svg');
       margin-left: 0.5vw;
+      @media (max-width: 1100px) {
+        margin-left: 1vw;
+        width: 2vw;
+        height: 2vw;
+      }
     }
   }
 }

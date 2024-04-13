@@ -27,6 +27,9 @@ function Nav() {
     const hamElement = document.querySelector('.ham.hamRotate.ham4');
     hamElement.classList.toggle('active');
     setStateBurger(false);
+
+    const element = document.getElementById('Header');
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

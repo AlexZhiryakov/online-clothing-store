@@ -4,14 +4,29 @@
   align-items: center;
   margin-top: 2vw;
   .errorImg {
-    background-image: url('../../img/404.svg');
+    background-image: url('../../img/404Error.png');
     width: 30.47vw;
     height: 17.29vw;
     background-size: cover;
+    @media (max-width: 1100px) {
+      width: 40vw;
+      height: 23vw;
+    }
+    @media (max-width: 700px) {
+      width: 50vw;
+      height: 28vw;
+    }
   }
   .errorText {
     color: rgb(113, 105, 105);
     font-size: 1.04vw;
+    @media (max-width: 1100px) {
+      font-size: 1.5vw;
+      margin-top: 0.5vw;
+    }
+    @media (max-width: 700px) {
+      font-size: 2vw;
+    }
   }
   .errorButton {
     text-decoration: none;
@@ -22,5 +37,15 @@
     color: white;
     padding: 0.8vw 3.2vw;
     border-radius: 1vw;
+    @media (max-width: 1100px) {
+      font-size: 1.2vw;
+      margin-top: 1.5vw;
+      padding: 1vw 3.5vw;
+    }
+    @media (max-width: 700px) {
+      font-size: 1.5vw;
+      padding: 1.2vw 3.8vw;
+      margin-top: 2vw;
+    }
   }
 }
