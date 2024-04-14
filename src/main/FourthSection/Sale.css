@@ -555,3 +555,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
+Link {
+  outline: none;
+}

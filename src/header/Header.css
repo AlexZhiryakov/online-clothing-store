@@ -37,6 +37,7 @@
 }
 .Header .header .leftHeader .nav div {
   margin-left: 2vw;
+  outline: none;
 }
 .Header .header .leftHeader .logo {
   background-image: url("../img/logo.svg");
@@ -136,4 +137,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+Link {
+  outline: none;
 }

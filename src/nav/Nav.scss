@@ -13,6 +13,7 @@
       align-items: center;
       .Link {
         text-decoration: none;
+        outline: none;
       }
       .leftEl {
         margin: 0px 2.7vw 0 0;
@@ -759,4 +760,7 @@ h2 {
       }
     }
   }
+}
+Link {
+  outline: none;
 }

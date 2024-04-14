@@ -124,7 +124,7 @@
   margin-left: 4vw;
 }
 .newCollection .bgNewCollection .newCollectionSecondColumn .bgCircle .bgSneakers {
-  background-image: url("../../img/bgSneak.svg");
+  background-image: url("../../img/sneakersFirst.png");
   width: 26vw;
   height: 26vw;
   background-size: cover;
@@ -209,4 +209,8 @@
   width: 8.2vw;
   height: 5.2vw;
   background-size: cover;
+}
+
+Link {
+  outline: none;
 }

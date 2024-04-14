@@ -44,31 +44,40 @@
   margin-top: 0.6vw;
 }
 .Sneakers .block .bgImg .addInfo .heart {
-  width: 1.67vw;
-  height: 1.67vw;
+  width: 2.2vw;
+  height: 2.2vw;
   opacity: 0%;
   margin-right: 0.26vw;
   background-size: cover;
 }
+@media (max-width: 1500px) {
+  .Sneakers .block .bgImg .addInfo .heart {
+    opacity: 100%;
+  }
+}
 @media (max-width: 1100px) {
   .Sneakers .block .bgImg .addInfo .heart {
-    width: 3vw;
-    height: 3vw;
-    opacity: 100%;
+    width: 5vw;
+    height: 5vw;
     margin-right: 1vw;
   }
 }
 .Sneakers .block .bgImg .addInfo .bag {
-  width: 1.67vw;
-  height: 1.67vw;
+  width: 2.2vw;
+  height: 2.2vw;
   opacity: 0%;
   background-size: cover;
 }
+@media (max-width: 1500px) {
+  .Sneakers .block .bgImg .addInfo .bag {
+    opacity: 100%;
+  }
+}
 @media (max-width: 1100px) {
   .Sneakers .block .bgImg .addInfo .bag {
-    width: 3vw;
-    height: 3vw;
-    opacity: 100%;
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1vw;
   }
 }
 .Sneakers .block .bgImg .bgArea {

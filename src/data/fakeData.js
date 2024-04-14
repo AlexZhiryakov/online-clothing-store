@@ -1,6 +1,6 @@
 import bestSale from '../img/bestSale.svg';
-import hitSeason from '../img/хитСезона.svg';
-import top from '../img/топПродаж.svg';
+import hitSeason from '../img/HITSVG.svg';
+import top from '../img/topSvg.svg';
 
 import firstSale from '../img/firstSale.svg';
 import secondSale from '../img/18.svg';

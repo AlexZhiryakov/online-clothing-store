@@ -104,7 +104,7 @@
         margin-top: 2vw;
         margin-left: 4vw;
         .bgSneakers {
-          background-image: url('../../img/bgSneak.svg');
+          background-image: url('../../img/sneakersFirst.png');
           width: 26vw;
           height: 26vw;
           background-size: cover;
@@ -180,4 +180,7 @@
       background-size: cover;
     }
   }
+}
+Link {
+  outline: none;
 }
