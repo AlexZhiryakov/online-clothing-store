@@ -2,7 +2,8 @@ import '../main/SecondSection/Popular.css';
 import fakeData from '../../src/data/fakeData';
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import api from '../main/SecondSection/Posts';
+// import api from '../main/SecondSection/Posts';
+import axios from 'axios';
 import { addInLiked } from '../redux/cart/reducer';
 import { Link } from 'react-router-dom';
 import {
@@ -29,14 +30,14 @@ function Search() {
   }, [liked]);
 
   const toggleLiked = (name, id, mark, img, price, oldPrice, sale) => {
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       const take = data.data.map((el) => {
         return el.id;
       });
       const takeNumber = take[0];
       if (takeNumber != id) {
-        api
-          .post('/liked', {
+        axios
+          .post('http://localhost:3393/liked', {
             name,
             id,
             mark,
@@ -54,7 +55,7 @@ function Search() {
             localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
           });
       } else {
-        api.delete(`/liked/${id}/`).then((data) => {
+        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
           dispatch(addInLiked(id));
         });
         const fillHeartObj =

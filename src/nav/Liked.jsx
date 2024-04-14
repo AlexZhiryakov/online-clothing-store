@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import api from '../main/SecondSection/Posts';
+// import api from '../main/SecondSection/Posts';
 import { addInLiked } from '../redux/cart/reducer';
 import { Link } from 'react-router-dom';
 import '../main/SecondSection/Popular.css';
@@ -15,6 +15,7 @@ import { HiOutlineHeart } from 'react-icons/hi2';
 import { HiMiniHeart } from 'react-icons/hi2';
 import { PiBagSimpleFill } from 'react-icons/pi'; // закрашенный
 import { PiBagSimpleLight } from 'react-icons/pi'; // не закрашенный
+import axios from 'axios';
 
 function Liked() {
   const dispatch = useDispatch();
@@ -22,16 +23,15 @@ function Liked() {
   const liked = useSelector((state) => state.cart.liked);
   const items = useSelector((state) => state.cart.itemsInCart)
   console.log(listLiked)
-
   useEffect(() => {
-    api.get('/liked').then((data) => {
+    axios.get('http://localhost:3393/liked').then((data) => {
       console.log(data.data)
       setListLiked(data.data);
     });
   }, [liked]);
 
   const toggleLiked = (id) => {
-    api.delete(`/liked/${id}/`).then((data) => {
+    axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
       dispatch(addInLiked(id));
     });
     const fillHeartObj = JSON.parse(localStorage.getItem('fillHeart')) || {};

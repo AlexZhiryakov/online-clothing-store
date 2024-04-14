@@ -11,8 +11,9 @@ import { removeNewTotalPrice } from '../../redux/cart/reducer';
 import { deleteItemFromCart } from '../../redux/cart/reducer';
 import { addNewTotalPrice } from '../../redux/cart/reducer';
 import { setItemInCart } from '../../redux/cart/reducer';
-import api from '../../main/SecondSection/Posts';
+// import api from '../../main/SecondSection/Posts';
 import './NavProducts.css';
+import axios from 'axios';
 
 function Hoodies() {
   const dispatch = useDispatch();
@@ -32,15 +33,15 @@ function Hoodies() {
     quantity,
     widthMark
   ) => {
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       const take = data.data.map((el) => {
         return el.id;
       });
       console.log(take[0]);
       const takeNumber = take[0];
       if (takeNumber != id) {
-        api
-          .post('/liked', {
+        axios
+          .post('http://localhost:3393/liked', {
             name,
             id,
             mark,
@@ -60,7 +61,7 @@ function Hoodies() {
             localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
           });
       } else {
-        api.delete(`/liked/${id}/`).then((data) => {
+        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
           console.log(data.data);
         });
         const fillHeartObj =
@@ -70,7 +71,7 @@ function Hoodies() {
         dispatch(addInLiked(id));
       }
     });
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       console.log(data.data);
     });
   };

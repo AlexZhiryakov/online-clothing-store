@@ -13,10 +13,10 @@ import {
   addNewTotalPrice,
   removeNewTotalPrice,
 } from '../../redux/cart/reducer';
-import api from '../SecondSection/Posts';
+// import api from '../SecondSection/Posts';
 import { addInLiked } from '../../redux/cart/reducer';
 import Viewer from 'react-viewer';
-import { combineSlices } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 function ProductTemplate({
   id,
@@ -72,15 +72,15 @@ function ProductTemplate({
 
   const toggleLiked = () => {
     console.log('сработало');
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       const take = data.data.map((el) => {
         return el.id;
       });
       console.log(take[0]);
       const takeNumber = take[0];
       if (takeNumber != id) {
-        api
-          .post('/liked', {
+        axios
+          .post('http://localhost:3393/liked', {
             name,
             id,
             mark,
@@ -110,7 +110,7 @@ function ProductTemplate({
         dispatch(addInLiked(id));
       }
     });
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       console.log(data.data);
     });
   };
