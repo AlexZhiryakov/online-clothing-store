@@ -6,7 +6,7 @@ import {
   addNewTotalPrice,
   removeNewTotalPrice,
 } from '../../redux/cart/reducer';
-import api from '../SecondSection/Posts';
+// import api from '../SecondSection/Posts';
 import { addInLiked } from '../../redux/cart/reducer';
 import { Link } from 'react-router-dom';
 import { HiOutlineHeart } from 'react-icons/hi2';
@@ -15,6 +15,7 @@ import { PiBagSimpleFill } from 'react-icons/pi'; // закрашенный
 import { PiBagSimpleLight } from 'react-icons/pi'; // не закрашенный
 import RouterProduct from './RouterProduct';
 import { productDetails } from '../../redux/cart/reducer';
+import axios from 'axios';
 
 function Slide({ item }) {
   const [listLiked, setListLiked] = useState([]);
@@ -53,15 +54,15 @@ function Slide({ item }) {
 
   const toggleLiked = (e) => {
     console.log('сработало');
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       const take = data.data.map((el) => {
         return el.id;
       });
       console.log(take[0]);
       const takeNumber = take[0];
       if (takeNumber != id) {
-        api
-          .post('/liked', {
+        axios
+          .post('http://localhost:3393/liked', {
             name,
             id,
             mark,
@@ -87,7 +88,7 @@ function Slide({ item }) {
             localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
           });
       } else {
-        api.delete(`/liked/${id}/`).then((data) => {
+        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
           console.log(data.data);
         });
         const fillHeartObj =
@@ -97,7 +98,7 @@ function Slide({ item }) {
         dispatch(addInLiked(id));
       }
     });
-    api.get(`/liked?id=${id}`).then((data) => {
+    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       console.log(data.data);
     });
   };
@@ -266,6 +267,7 @@ function Slide({ item }) {
                 className="heart"
                 onClick={(e) => {
                   e.preventDefault();
+                  e.stopPropagation();
                   toggleLiked();
                 }}
               />
@@ -274,6 +276,7 @@ function Slide({ item }) {
                 className="heart"
                 onClick={(e) => {
                   e.preventDefault();
+                  e.stopPropagation();
                   toggleLiked();
                 }}
               />
@@ -283,6 +286,7 @@ function Slide({ item }) {
                 className="bag"
                 onClick={(e) => {
                   e.preventDefault();
+                  e.stopPropagation();
                   handleClick();
                 }}
               />
@@ -291,6 +295,7 @@ function Slide({ item }) {
                 className="bag"
                 onClick={(e) => {
                   e.preventDefault();
+                  e.stopPropagation();
                   handleClick();
                 }}
               />

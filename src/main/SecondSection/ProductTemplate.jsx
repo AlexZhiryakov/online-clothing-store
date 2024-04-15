@@ -100,7 +100,7 @@ function ProductTemplate({
             localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
           });
       } else {
-        api.delete(`/liked/${id}/`).then((data) => {
+        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
           console.log(data.data);
         });
         const fillHeartObj =
