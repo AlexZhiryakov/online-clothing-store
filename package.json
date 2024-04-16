@@ -4,13 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run dev-vite\"",
+    "dev": "concurrently \"npm run server\" \"npm run build-vite\"",
     "dev-vite": "vite",
     "server": "npx json-server -p 3393 -w src/data/db.json",
-    "build": "vite build",
+    "build": "npm run server && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start": "npm run server && vite"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
