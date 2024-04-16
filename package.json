@@ -7,9 +7,10 @@
     "dev": "concurrently \"npm run server\" \"npm run build-vite\"",
     "dev-vite": "vite",
     "server": "npx json-server -p 3393 -w src/data/db.json",
-    "build": "npm run server && vite build",
+    "build": "vite build && npm run server",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
