@@ -297,6 +297,7 @@ body {
   .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn {
     margin-left: 4vw;
     margin-top: 3vw;
+    width: 35.5%;
   }
 }
 .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .nameTrousers {
@@ -389,6 +390,7 @@ body {
   .Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt {
     margin-left: 4vw;
     margin-top: 3vw;
+    width: 30%;
   }
 }
 .Sale .allColumns .secondColumn .firstString .tshirt .columnTShirt .nameTShirt {
@@ -486,6 +488,7 @@ body {
   .Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn {
     margin-left: 4vw;
     margin-top: 3vw;
+    width: 38%;
   }
 }
 .Sale .allColumns .secondColumn .secondString .hoody .HoodyColumn .nameHoody {

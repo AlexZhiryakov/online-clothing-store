@@ -53,7 +53,6 @@ function Slide({ item }) {
   }, [])
 
   const toggleLiked = (e) => {
-    console.log('сработало');
     axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
       const take = data.data.map((el) => {
         return el.id;

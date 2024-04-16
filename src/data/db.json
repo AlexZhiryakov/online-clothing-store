@@ -1,3 +1,53 @@
 {
-  "liked": []
+  "liked": [
+    {
+      "id": "2",
+      "name": "Air Jordan 1 Low SE",
+      "mark": "/src/img/bestSale.svg",
+      "img": "/src/img/greenShoesFirst.jpg",
+      "price": 10990,
+      "oldPrice": 12990,
+      "sale": "/src/img/18.svg",
+      "quantity": 1,
+      "fillHeart": true,
+      "widthMark": "10.2vw",
+      "size": {
+        "first": "39",
+        "second": "40",
+        "third": "41",
+        "fourth": "42",
+        "fifth": "43",
+        "sixth": "44"
+      },
+      "color": "green",
+      "category": "sneakers",
+      "imgSecond": "/src/img/greenShoesSecond.jpg",
+      "imgThird": "/src/img/greenShoesThird.jpg",
+      "imgFour": "/src/img/greenShoesFour.jpg"
+    },
+    {
+      "id": "4",
+      "name": "High-Waisted Loose Women Cargo Pants",
+      "mark": "/src/img/HITSVG.svg",
+      "img": "/src/img/brownTrousersFirst.png",
+      "price": 7990,
+      "oldPrice": 9290,
+      "sale": "/src/img/16.svg",
+      "quantity": 1,
+      "fillHeart": true,
+      "widthMark": "8.88vw",
+      "size": {
+        "first": "S",
+        "second": "M",
+        "third": "L",
+        "fourth": "XL",
+        "fifth": "XXL"
+      },
+      "color": "brown",
+      "category": "trousers",
+      "imgSecond": "/src/img/brownTrousersSecond.png",
+      "imgThird": "/src/img/brownTrousersThird.png",
+      "imgFour": "/src/img/brownTrousersFour.png"
+    }
+  ]
 }

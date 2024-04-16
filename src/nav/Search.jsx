@@ -211,7 +211,7 @@ function Search() {
       })
     );
     const scroll = () => {
-      const element = document.getElementById();
+      const element = document.getElementById('Header');
       element.scrollIntoView({ behavior: 'smooth' });
     };
     scroll();
