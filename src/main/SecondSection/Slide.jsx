@@ -6,7 +6,6 @@ import {
   addNewTotalPrice,
   removeNewTotalPrice,
 } from '../../redux/cart/reducer';
-// import api from '../SecondSection/Posts';
 import { addInLiked } from '../../redux/cart/reducer';
 import { Link } from 'react-router-dom';
 import { HiOutlineHeart } from 'react-icons/hi2';
@@ -15,7 +14,6 @@ import { PiBagSimpleFill } from 'react-icons/pi'; // закрашенный
 import { PiBagSimpleLight } from 'react-icons/pi'; // не закрашенный
 import RouterProduct from './RouterProduct';
 import { productDetails } from '../../redux/cart/reducer';
-import axios from 'axios';
 
 function Slide({ item }) {
   const [listLiked, setListLiked] = useState([]);
@@ -43,63 +41,90 @@ function Slide({ item }) {
   const newTotalPrice = useSelector((state) => state.cart.newTotalPrice);
 
   useEffect(() => {
-    const getPrice = JSON.parse(localStorage.getItem('newTotalPrice'))
-    if (getPrice === null) {
-      localStorage.setItem('newTotalPrice', JSON.stringify([]))
-      localStorage.setItem('itemList', JSON.stringify([]))
-    } else {
-      console.log('ошибка')
-    }
-  }, [])
+    const getPrice = JSON.parse(localStorage.getItem('newTotalPrice'));
+    let getListLiked = JSON.parse(localStorage.getItem('fillHeart'));
 
-  const toggleLiked = (e) => {
-    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
-      const take = data.data.map((el) => {
-        return el.id;
-      });
-      console.log(take[0]);
-      const takeNumber = take[0];
-      if (takeNumber != id) {
-        axios
-          .post('http://localhost:3393/liked', {
-            name,
-            id,
-            mark,
-            img,
-            price,
-            oldPrice,
-            sale,
-            quantity,
-            fillHeart: true,
-            widthMark,
-            size,
-            color,
-            category,
-            imgSecond,
-            imgThird,
-            imgFour,
-          })
-          .then((data) => {
-            dispatch(addInLiked(data.data));
-            const fillHeartObj =
-              JSON.parse(localStorage.getItem('fillHeart')) || {};
-            fillHeartObj[id] = true;
-            localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-          });
-      } else {
-        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
-          console.log(data.data);
-        });
-        const fillHeartObj =
-          JSON.parse(localStorage.getItem('fillHeart')) || {};
-        fillHeartObj[id] = false;
-        localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-        dispatch(addInLiked(id));
+    if (getPrice === null) {
+      localStorage.setItem('newTotalPrice', JSON.stringify([]));
+      localStorage.setItem('itemList', JSON.stringify([]));
+    }
+
+    if (getListLiked === null) {
+      getListLiked = [{ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart: false }];
+    } else {
+      const existingItem = getListLiked.find(item => item.id === id);
+      if (!existingItem) {
+        getListLiked.push({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart: false });
       }
-    });
-    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
-      console.log(data.data);
-    });
+    }
+
+    localStorage.setItem('fillHeart', JSON.stringify(getListLiked));
+  }, []);
+
+  const toggleLiked = () => {
+    const getHearts = JSON.parse(localStorage.getItem('fillHeart'))
+    const getID = getHearts[id]
+    console.log(getID)
+    if (getID.fillHeart) {
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, oldPrice, widthMark, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:false}
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+      dispatch(addInLiked(id));
+    } else {
+      dispatch(addInLiked({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color }));
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, widthMark, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:true }
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    }
+    // axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
+    //   const take = data.data.map((el) => {
+    //     return el.id;
+    //   });
+    //   console.log(take[0]);
+    //   const takeNumber = take[0];
+    //   if (takeNumber != id) {
+    //     axios
+    //       .post('http://localhost:3393/liked', {
+    //         name,
+    //         id,
+    //         mark,
+    //         img,
+    //         price,
+    //         oldPrice,
+    //         sale,
+    //         quantity,
+    //         fillHeart: true,
+    //         widthMark,
+    //         size,
+    //         color,
+    //         category,
+    //         imgSecond,
+    //         imgThird,
+    //         imgFour,
+    //       })
+    //       .then((data) => {
+    //         dispatch(addInLiked(data.data));
+    //         const fillHeartObj =
+    //           JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //         fillHeartObj[id] = true;
+    //         localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //       });
+    //   } else {
+    //     axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
+    //       console.log(data.data);
+    //     });
+    //     const fillHeartObj =
+    //       JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //     fillHeartObj[id] = false;
+    //     localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //     dispatch(addInLiked(id));
+    //   }
+    // });
+    // axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
+    //   console.log(data.data);
+    // });
   };
 
   useEffect(() => {
@@ -108,7 +133,9 @@ function Slide({ item }) {
 
   const checkFillFunc = (id) => {
     const fillHeartObj = JSON.parse(localStorage.getItem('fillHeart')) || {};
-    return fillHeartObj[id] === true;
+    if (fillHeartObj !== null && fillHeartObj[id] !== undefined) {
+      return fillHeartObj[id].fillHeart
+    }
   };
 
   useEffect(() => {
@@ -123,7 +150,7 @@ function Slide({ item }) {
     }
   }, [items]);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     const check = JSON.parse(localStorage.getItem(`${name}${size.first}`));
     const sizee = size.first;
     if (check !== null) {
@@ -229,6 +256,7 @@ function Slide({ item }) {
         imgFour,
         size,
         color,
+        widthMark
       })
     );
     const scroll = () => {

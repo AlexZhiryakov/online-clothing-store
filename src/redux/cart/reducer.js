@@ -120,6 +120,7 @@ const cartSlice = createSlice({
       }
     },
     addInLiked: (state, action) => {
+      console.log(action.payload)
       return {
         ...state,
         liked: action.payload,

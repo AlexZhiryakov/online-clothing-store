@@ -6,6 +6,11 @@ body {
   margin-top: 7vw;
   width: 100%;
 }
+@media (max-width: 700px) {
+  .Sale {
+    margin-top: 10vw;
+  }
+}
 .Sale .nameSale {
   font-size: 2.08vw;
 }
@@ -561,4 +566,11 @@ body {
 
 Link {
   outline: none;
+}
+
+@media (max-width: 700px) {
+  #priceTrousers {
+    width: 22vw;
+    padding: 0.8vw 0 0.8vw 3.5vw;
+  }
 }

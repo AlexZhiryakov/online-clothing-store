@@ -17,7 +17,7 @@ function Header() {
     <div className="Header" id='Header'>
       <div className="header">
         <div className="leftHeader">
-          <div className="logo"></div>
+          <Link to="/"><div className="logo"></div></Link>
           <div className="nav">
             <Link to="/payment" className="paymentLink">
               <div className="navDiv">Оплата и доставка</div>

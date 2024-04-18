@@ -23,57 +23,67 @@ function Hoodies() {
   const [listLiked, setListLiked] = useState([]);
 
   const toggleLiked = (
-    name,
-    id,
-    mark,
-    img,
-    price,
-    oldPrice,
-    sale,
-    quantity,
-    widthMark
+    id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, widthMark
   ) => {
-    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
-      const take = data.data.map((el) => {
-        return el.id;
-      });
-      console.log(take[0]);
-      const takeNumber = take[0];
-      if (takeNumber != id) {
-        axios
-          .post('http://localhost:3393/liked', {
-            name,
-            id,
-            mark,
-            img,
-            price,
-            oldPrice,
-            sale,
-            quantity,
-            fillHeart: true,
-            widthMark,
-          })
-          .then((data) => {
-            dispatch(addInLiked(data.data));
-            const fillHeartObj =
-              JSON.parse(localStorage.getItem('fillHeart')) || {};
-            fillHeartObj[id] = true;
-            localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-          });
-      } else {
-        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
-          console.log(data.data);
-        });
-        const fillHeartObj =
-          JSON.parse(localStorage.getItem('fillHeart')) || {};
-        fillHeartObj[id] = false;
-        localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-        dispatch(addInLiked(id));
-      }
-    });
-    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
-      console.log(data.data);
-    });
+    console.log(id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, widthMark)
+    const getHearts = JSON.parse(localStorage.getItem('fillHeart'))
+    const getID = getHearts[id]
+    console.log(getID)
+    if (getID.fillHeart) {
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, oldPrice, widthMark, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:false}
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+      dispatch(addInLiked(id));
+    } else {
+      console.log({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color })
+      dispatch(addInLiked({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color }));
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, widthMark, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:true }
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    }
+    // axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
+    //   const take = data.data.map((el) => {
+    //     return el.id;
+    //   });
+    //   console.log(take[0]);
+    //   const takeNumber = take[0];
+    //   if (takeNumber != id) {
+    //     axios
+    //       .post('http://localhost:3393/liked', {
+    //         name,
+    //         id,
+    //         mark,
+    //         img,
+    //         price,
+    //         oldPrice,
+    //         sale,
+    //         quantity,
+    //         fillHeart: true,
+    //         widthMark,
+    //       })
+    //       .then((data) => {
+    //         dispatch(addInLiked(data.data));
+    //         const fillHeartObj =
+    //           JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //         fillHeartObj[id] = true;
+    //         localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //       });
+    //   } else {
+    //     axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
+    //       console.log(data.data);
+    //     });
+    //     const fillHeartObj =
+    //       JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //     fillHeartObj[id] = false;
+    //     localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //     dispatch(addInLiked(id));
+    //   }
+    // });
+    // axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
+    //   console.log(data.data);
+    // });
   };
 
   useEffect(() => {
@@ -82,7 +92,9 @@ function Hoodies() {
 
   const checkFillFunc = (id) => {
     const fillHeartObj = JSON.parse(localStorage.getItem('fillHeart')) || {};
-    return fillHeartObj[id] === true;
+    if (fillHeartObj !== null && fillHeartObj[id] !== undefined) {
+      return fillHeartObj[id].fillHeart
+    }
   };
 
   useEffect(() => {
@@ -284,17 +296,23 @@ function Hoodies() {
                       className="heart"
                       onClick={(e) => {
                         e.preventDefault();
+                        e.stopPropagation()
                         toggleLiked(
-                          el.name,
                           el.id,
-                          el.mark,
-                          el.img,
-                          el.price,
-                          el.oldPrice,
-                          el.sale,
-                          el.quantity,
-                          el.fillHeart,
-                          el.widthMark
+                          el.img, 
+                          el.mark, 
+                          el.name, 
+                          el.price, 
+                          el.oldPrice, 
+                          el.sale, 
+                          el.quantity, 
+                          el.category, 
+                          el.imgSecond, 
+                          el.imgThird, 
+                          el.imgFour, 
+                          el.size, 
+                          el.color,
+                          el.widthMark,
                         );
                       }}
                     />
@@ -303,17 +321,23 @@ function Hoodies() {
                       className="heart"
                       onClick={(e) => {
                         e.preventDefault();
+                        e.stopPropagation()
                         toggleLiked(
-                          el.name,
                           el.id,
-                          el.mark,
-                          el.img,
-                          el.price,
-                          el.oldPrice,
-                          el.sale,
-                          el.quantity,
-                          el.fillHeart,
-                          el.widthMark
+                          el.img, 
+                          el.mark, 
+                          el.name, 
+                          el.price, 
+                          el.oldPrice, 
+                          el.sale, 
+                          el.quantity, 
+                          el.category, 
+                          el.imgSecond, 
+                          el.imgThird, 
+                          el.imgFour, 
+                          el.size, 
+                          el.color,
+                          el.widthMark,
                         );
                       }}
                     />
@@ -323,6 +347,7 @@ function Hoodies() {
                       className="bag"
                       onClick={(e) => {
                         e.preventDefault();
+                        e.stopPropagation()
                         handleClick(
                           el.id,
                           el.mark,
@@ -347,6 +372,7 @@ function Hoodies() {
                       className="bag"
                       onClick={(e) => {
                         e.preventDefault();
+                        e.stopPropagation()
                         handleClick(
                           el.id,
                           el.mark,

@@ -1,5 +1,8 @@
 .Subsribe {
   margin-top: 8vw;
+  @media (max-width: 700px) {
+    margin-top: 12vw;
+  }
   .bgSubscribe {
     border-radius: 0.63vw;
     background: linear-gradient(
@@ -68,6 +71,7 @@
           width: 47.5vw;
           font-weight: 400;
           margin-top: 4vw;
+          border-radius: 1vw;
         }
       }
     }

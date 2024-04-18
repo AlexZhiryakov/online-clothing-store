@@ -45,7 +45,7 @@ import whiteShortsFour from '../img/whiteShortsFour.jpg';
 
 const fakeData = [
   {
-    id: '1',
+    id: '0',
     category: 'hoody',
     img: blueHoodyFirst,
     imgSecond: blueHoodySecond,
@@ -68,7 +68,7 @@ const fakeData = [
     allQuantity: 14,
   },
   {
-    id: '2',
+    id: '1',
     category: 'sneakers',
     mark: bestSale,
     img: greenShoesFirst,
@@ -93,7 +93,7 @@ const fakeData = [
     allQuantity: 3,
   },
   {
-    id: '3',
+    id: '2',
     category: 'sneakers',
     mark: top,
     img: brownJordanFirst,
@@ -118,7 +118,7 @@ const fakeData = [
     allQuantity: 5,
   },
   {
-    id: '4',
+    id: '3',
     category: 'trousers',
     mark: hitSeason,
     img: brownTrousersFirst,
@@ -142,7 +142,7 @@ const fakeData = [
     allQuantity: 7,
   },
   {
-    id: '5',
+    id: '4',
     category: 'hoody',
     img: pinkHoodyFirst,
     imgSecond: pinkHoodySecond,
@@ -165,7 +165,7 @@ const fakeData = [
     allQuantity: 8,
   },
   {
-    id: '6',
+    id: '5',
     category: 'shorts',
     mark: top,
     img: whiteShortsFirst,

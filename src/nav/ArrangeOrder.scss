@@ -629,7 +629,12 @@
         font-size: 2vw;
         border-radius: 1vw;
       }
+      .Link {
+        text-decoration: none;
+        color: white;
+      }
     }
+
     .warning {
       color: red;
       font-size: 1vw;
@@ -645,40 +650,99 @@
 }
 
 .successfullyOrder {
-  position: fixed;
-  top: 15%;
-  left: 29%;
-  width: 40vw;
-  height: 30vw;
-  background-color: whitesmoke;
-  border-radius: 2vw;
-  z-index: 300000000000000000000000000000;
-  .mark {
-    background-image: url('../img/галочка.svg');
-    width: 5.21vw;
-    height: 5.21vw;
-    background-size: cover;
-    margin-left: 17vw;
-    margin-top: 2vw;
-  }
+  margin-top: 3vw;
   .thanks {
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
+    margin-top: 2vw;
+    @media (max-width: 700px) {
+      font-size: 4vw;
+    }
+  }
+  .manager {
+    font-size: 1.3vw;
+    text-align: center;
+    margin-top: 2vw;
+    @media (max-width: 700px) {
+      font-size: 2.5vw;
+      margin-top: 4vw;
+    }
+  }
+  .contacts {
+    display: flex;
+    justify-content: center;
     margin-top: 1vw;
+    @media (max-width: 700px) {
+      margin-top: 2vw;
+    }
+    .wtsRound {
+      background-image: url('../img/whatsapp-round.svg');
+      width: 32px;
+      height: 32px;
+      margin-right: 2vw;
+      @media (max-width: 700px) {
+        margin-right: 5vw
+      }
+    }
+    .tgRound {
+      background-image: url('../img/telegram-round.svg');
+      width: 32px;
+      height: 32px;
+      margin-right: 2vw;
+      @media (max-width: 700px) {
+        margin-right: 5vw
+      }
+    }
+    .emailImg {
+      background-image: url('../img/telegram-round (1\).svg');
+      width: 32px;
+      height: 32px;
+      margin-right: 2vw;
+      @media (max-width: 700px) {
+        margin-right: 5vw
+      }
+    }
+    .phoneImg {
+      background-image: url('../img/telegram-round\ \(2\).svg');
+      width: 32px;
+      height: 32px;
+    }
   }
   .back {
     text-decoration: none;
-    margin-left: 7.2vw;
+    margin-left: 33%;
+    cursor: pointer;
+    @media (max-width: 800px) {
+      margin-left: 32%;
+    }
+    @media (max-width: 700px) {
+      margin-left: 17%;
+    }
+    @media (max-width: 400px) {
+      margin-left: 16%;
+    }
+    @media (max-width: 350px) {
+      margin-left: 15%;
+    }
+    @media (max-width: 300px) {
+      margin-left: 14.5%;
+    }
     .backButton {
-      padding: 1.04vw 3vw;
+      padding: 1.04vw 5vw;
       font-size: 1.5vw;
       border-radius: 1.5vw;
       border: none;
       text-align: center;
-      margin-top: 9vw;
+      margin-top: 4vw;
       color: azure;
       background-color: black;
+      @media (max-width: 700px) {
+        padding: 2vw 10vw;
+        font-size: 3vw;
+        border-radius: 3vw;
+        margin-top: 6vw;
+      }
     }
   }
 }

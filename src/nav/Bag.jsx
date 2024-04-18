@@ -40,11 +40,6 @@ function Bag() {
     }
   }, [items, newTotalPrice]);
 
-  // useEffect(() => {
-  //   const getTotal = JSON.parse(localStorage.getItem('newTotalPrice'));
-  //   console.log(getTotal);
-  // }, []);
-
   const clearTheBag = () => {
     localStorage.clear();
     localStorage.setItem('newTotalPrice', JSON.stringify([]));

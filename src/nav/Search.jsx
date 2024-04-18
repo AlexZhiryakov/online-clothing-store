@@ -29,41 +29,59 @@ function Search() {
     console.log(listLiked);
   }, [liked]);
 
-  const toggleLiked = (name, id, mark, img, price, oldPrice, sale) => {
-    axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
-      const take = data.data.map((el) => {
-        return el.id;
-      });
-      const takeNumber = take[0];
-      if (takeNumber != id) {
-        axios
-          .post('http://localhost:3393/liked', {
-            name,
-            id,
-            mark,
-            img,
-            price,
-            oldPrice,
-            sale,
-            fillHeart: true,
-          })
-          .then((data) => {
-            dispatch(addInLiked(data.data));
-            const fillHeartObj =
-              JSON.parse(localStorage.getItem('fillHeart')) || {};
-            fillHeartObj[id] = true;
-            localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-          });
-      } else {
-        axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
-          dispatch(addInLiked(id));
-        });
-        const fillHeartObj =
-          JSON.parse(localStorage.getItem('fillHeart')) || {};
-        fillHeartObj[id] = false;
-        localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
-      }
-    });
+  const toggleLiked = (id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, widthMark) => {
+    console.log(id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, widthMark)
+    const getHearts = JSON.parse(localStorage.getItem('fillHeart'))
+    const getID = getHearts[id]
+    console.log(getID)
+    if (getID.fillHeart) {
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, oldPrice, widthMark, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:false}
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+      dispatch(addInLiked(id));
+    } else {
+      console.log({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color })
+      dispatch(addInLiked({ id, img, mark, name, price, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color }));
+      const fillHeartObj =
+        JSON.parse(localStorage.getItem('fillHeart')) || {};
+      fillHeartObj[id] = { id, img, mark, name, price, widthMark, oldPrice, sale, quantity, category, imgSecond, imgThird, imgFour, size, color, fillHeart:true }
+      localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    }
+    // axios.get(`http://localhost:3393/liked?id=${id}`).then((data) => {
+    //   const take = data.data.map((el) => {
+    //     return el.id;
+    //   });
+    //   const takeNumber = take[0];
+    //   if (takeNumber != id) {
+    //     axios
+    //       .post('http://localhost:3393/liked', {
+    //         name,
+    //         id,
+    //         mark,
+    //         img,
+    //         price,
+    //         oldPrice,
+    //         sale,
+    //         fillHeart: true,
+    //       })
+    //       .then((data) => {
+    //         dispatch(addInLiked(data.data));
+    //         const fillHeartObj =
+    //           JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //         fillHeartObj[id] = true;
+    //         localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //       });
+    //   } else {
+    //     axios.delete(`http://localhost:3393/liked/${id}/`).then((data) => {
+    //       dispatch(addInLiked(id));
+    //     });
+    //     const fillHeartObj =
+    //       JSON.parse(localStorage.getItem('fillHeart')) || {};
+    //     fillHeartObj[id] = false;
+    //     localStorage.setItem('fillHeart', JSON.stringify(fillHeartObj));
+    //   }
+    // });
   };
 
   const handleClick = (
@@ -172,7 +190,9 @@ function Search() {
 
   const checkFillFunc = (id) => {
     const fillHeartObj = JSON.parse(localStorage.getItem('fillHeart')) || {};
-    return fillHeartObj[id] === true;
+    if (fillHeartObj !== null && fillHeartObj[id] !== undefined) {
+      return fillHeartObj[id].fillHeart
+    }
   };
 
   const openProduct = (
@@ -287,14 +307,23 @@ function Search() {
                         className="heart"
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation()
                           toggleLiked(
-                            el.name,
                             el.id,
-                            el.mark,
-                            el.img,
-                            el.price,
-                            el.oldPrice,
-                            el.sale,
+                            el.img, 
+                            el.mark, 
+                            el.name, 
+                            el.price, 
+                            el.oldPrice, 
+                            el.sale, 
+                            el.quantity, 
+                            el.category, 
+                            el.imgSecond, 
+                            el.imgThird, 
+                            el.imgFour, 
+                            el.size, 
+                            el.color,
+                            el.widthMark,
                           );
                         }}
                       />
@@ -303,14 +332,23 @@ function Search() {
                         className="heart"
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation()
                           toggleLiked(
-                            el.name,
                             el.id,
-                            el.mark,
-                            el.img,
-                            el.price,
-                            el.oldPrice,
-                            el.sale,
+                            el.img, 
+                            el.mark, 
+                            el.name, 
+                            el.price, 
+                            el.oldPrice, 
+                            el.sale, 
+                            el.quantity, 
+                            el.category, 
+                            el.imgSecond, 
+                            el.imgThird, 
+                            el.imgFour, 
+                            el.size, 
+                            el.color,
+                            el.widthMark,
                           );
                         }}
                       />
@@ -320,6 +358,7 @@ function Search() {
                         className="bag"
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation()
                           handleClick(
                             el.id,
                             el.mark,
@@ -344,6 +383,7 @@ function Search() {
                         className="bag"
                         onClick={(e) => {
                           e.preventDefault();
+                          e.stopPropagation()
                           handleClick(
                             el.id,
                             el.mark,

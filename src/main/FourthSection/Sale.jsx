@@ -54,7 +54,7 @@ function Sale() {
                 <div className="trousers">
                   <div className="trousersColumn">
                     <div className="nameTrousers">Штаны</div>
-                    <div className="priceTrousers">от 10 990 ₽</div>
+                    <div className="priceTrousers" id='priceTrousers'>от 10 990 ₽</div>
                   </div>
                   <div className="bgTrousers"></div>
                 </div>
