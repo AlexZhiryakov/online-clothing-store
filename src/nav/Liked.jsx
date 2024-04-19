@@ -259,7 +259,7 @@ function Liked() {
           <div id='allBlocks'>
         {returnHearts()?.map((liked) => (
           secondReturnHearts(liked.id) ? (
-          <div key={liked.id} className="block" style={{ marginLeft: countMoreTrue() ? '2vw' : '0px' }}>
+          <div key={liked.id} className="block" id='likedBlock' style={{ marginLeft: countMoreTrue() ? '2vw' : '0px' }}>
           <Link
           className="bgImg"
           id='bgImg'

@@ -29,6 +29,7 @@ function RouterProduct() {
                 widthMark={get.widthMark}
                 size={get.size}
                 color={get.color}
+                category={get.category}
               />
             }
           />

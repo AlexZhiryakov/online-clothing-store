@@ -12,8 +12,6 @@ import { HiOutlineHeart } from 'react-icons/hi2';
 import { HiMiniHeart } from 'react-icons/hi2';
 import { PiBagSimpleFill } from 'react-icons/pi'; // закрашенный
 import { PiBagSimpleLight } from 'react-icons/pi'; // не закрашенный
-import RouterProduct from './RouterProduct';
-import { productDetails } from '../../redux/cart/reducer';
 
 function Slide({ item }) {
   const [listLiked, setListLiked] = useState([]);

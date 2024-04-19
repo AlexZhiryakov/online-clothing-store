@@ -763,3 +763,9 @@ h2 {
 Link {
   outline: none;
 }
+#likedBlock {
+  margin-top: 1vw;
+  @media (max-width: 1100px) {
+    margin-top: 4vw;
+  }
+}

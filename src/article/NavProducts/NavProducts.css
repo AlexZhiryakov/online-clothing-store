@@ -1,13 +1,15 @@
 .Sneakers {
+  margin-top: 3vw;
+}
+.Sneakers .allBlocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2vw;
 }
-.Sneakers .block {
+.Sneakers .allBlocks .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +20,7 @@
   margin-right: 1vw;
   margin-left: 1vw;
 }
-.Sneakers .block .bgImg {
+.Sneakers .allBlocks .block .bgImg {
   width: 20.47vw;
   height: 25.77vw;
   background-size: cover;
@@ -31,19 +33,19 @@
   color: black;
 }
 @media (max-width: 1100px) {
-  .Sneakers .block .bgImg {
+  .Sneakers .allBlocks .block .bgImg {
     width: 40vw;
     height: 50vw;
   }
 }
-.Sneakers .block .bgImg .addInfo {
+.Sneakers .allBlocks .block .bgImg .addInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 1vw;
   margin-top: 0.6vw;
 }
-.Sneakers .block .bgImg .addInfo .heart {
+.Sneakers .allBlocks .block .bgImg .addInfo .heart {
   width: 2.2vw;
   height: 2.2vw;
   opacity: 0%;
@@ -51,47 +53,57 @@
   background-size: cover;
 }
 @media (max-width: 1500px) {
-  .Sneakers .block .bgImg .addInfo .heart {
+  .Sneakers .allBlocks .block .bgImg .addInfo .heart {
     opacity: 100%;
   }
 }
 @media (max-width: 1100px) {
-  .Sneakers .block .bgImg .addInfo .heart {
+  .Sneakers .allBlocks .block .bgImg .addInfo .heart {
     width: 5vw;
     height: 5vw;
     margin-right: 1vw;
   }
 }
-.Sneakers .block .bgImg .addInfo .bag {
+.Sneakers .allBlocks .block .bgImg .addInfo .bag {
   width: 2.2vw;
   height: 2.2vw;
   opacity: 0%;
   background-size: cover;
 }
 @media (max-width: 1500px) {
-  .Sneakers .block .bgImg .addInfo .bag {
+  .Sneakers .allBlocks .block .bgImg .addInfo .bag {
     opacity: 100%;
   }
 }
 @media (max-width: 1100px) {
-  .Sneakers .block .bgImg .addInfo .bag {
+  .Sneakers .allBlocks .block .bgImg .addInfo .bag {
     width: 5vw;
     height: 5vw;
     margin-right: 1vw;
   }
 }
-.Sneakers .block .bgImg .bgArea {
+.Sneakers .allBlocks .block .bgImg .bgArea {
   width: 21vw;
   height: 2vw;
   background: #000;
 }
-.Sneakers .block .bgImg:hover .heart {
+.Sneakers .allBlocks .block .bgImg:hover .heart {
   opacity: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.Sneakers .block .bgImg:hover .bag {
+.Sneakers .allBlocks .block .bgImg:hover .bag {
   opacity: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+h3 {
+  font-size: 2.08vw;
+  font-weight: 500;
+}
+@media (max-width: 1100px) {
+  h3 {
+    font-size: 5vw;
+  }
 }

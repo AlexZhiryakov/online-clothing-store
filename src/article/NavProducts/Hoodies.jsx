@@ -252,6 +252,8 @@ function Hoodies() {
 
   return (
     <div className="Sneakers">
+      <h3>Толстовки</h3>
+      <div className='allBlocks'>
       {data.map((el) => {
         if (el.category === 'hoody') {
           return (
@@ -418,6 +420,7 @@ function Hoodies() {
           return null;
         }
       })}
+      </div>
     </div>
   );
 }

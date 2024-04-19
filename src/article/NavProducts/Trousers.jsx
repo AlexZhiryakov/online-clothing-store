@@ -211,6 +211,8 @@ function Trousers() {
 
   return (
     <div className="Sneakers">
+      <h3>Штаны</h3>
+      <div className='allBlocks'>
       {data.map((el) => {
         if (el.category === 'trousers') {
           return (
@@ -221,22 +223,24 @@ function Trousers() {
                   backgroundImage: `url(${el.img})`,
                 }}
                 to={`/${el.id}`}
-                onClick={openProduct(
-                  el.id,
-                  el.mark,
-                  el.img,
-                  el.name,
-                  el.price,
-                  el.oldPrice,
-                  el.sale,
-                  el.quantity,
-                  el.category,
-                  el.imgSecond,
-                  el.imgThird,
-                  el.imgFour,
-                  el.size,
-                  el.color
-                )}
+                onClick={() =>
+                  openProduct(
+                    el.id,
+                    el.mark,
+                    el.img,
+                    el.name,
+                    el.price,
+                    el.oldPrice,
+                    el.sale,
+                    el.quantity,
+                    el.category,
+                    el.imgSecond,
+                    el.imgThird,
+                    el.imgFour,
+                    el.size,
+                    el.color
+                  )
+                }
               >
                 <div className="firstMark">
                   <div
@@ -320,7 +324,7 @@ function Trousers() {
                           el.category,
                           el.imgSecond,
                           el.imgThird,
-                          el.imgFour
+                          el.imgFour,
                         );
                       }}
                     />
@@ -345,7 +349,7 @@ function Trousers() {
                           el.category,
                           el.imgSecond,
                           el.imgThird,
-                          el.imgFour
+                          el.imgFour,
                         );
                       }}
                     />
@@ -375,6 +379,7 @@ function Trousers() {
           return null;
         }
       })}
+      </div>
     </div>
   );
 }

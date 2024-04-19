@@ -211,6 +211,8 @@ function Shorts() {
 
   return (
     <div className="Sneakers">
+      <h3>Шорты</h3>
+      <div className='allBlocks'>
       {data.map((el) => {
         if (el.category === 'shorts') {
           return (
@@ -221,22 +223,24 @@ function Shorts() {
                   backgroundImage: `url(${el.img})`,
                 }}
                 to={`/${el.id}`}
-                onClick={openProduct(
-                  el.id,
-                  el.mark,
-                  el.img,
-                  el.name,
-                  el.price,
-                  el.oldPrice,
-                  el.sale,
-                  el.quantity,
-                  el.category,
-                  el.imgSecond,
-                  el.imgThird,
-                  el.imgFour,
-                  el.size,
-                  el.color
-                )}
+                onClick={() =>
+                  openProduct(
+                    el.id,
+                    el.mark,
+                    el.img,
+                    el.name,
+                    el.price,
+                    el.oldPrice,
+                    el.sale,
+                    el.quantity,
+                    el.category,
+                    el.imgSecond,
+                    el.imgThird,
+                    el.imgFour,
+                    el.size,
+                    el.color
+                  )
+                }
               >
                 <div className="firstMark">
                   <div
@@ -375,6 +379,7 @@ function Shorts() {
           return null;
         }
       })}
+      </div>
     </div>
   );
 }

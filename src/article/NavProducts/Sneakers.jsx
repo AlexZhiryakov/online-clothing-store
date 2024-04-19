@@ -211,6 +211,8 @@ function Sneakers() {
 
   return (
     <div className="Sneakers">
+      <h3>Кроссовки</h3>
+      <div className='allBlocks'>
       {data.map((el) => {
         if (el.category === 'sneakers') {
           return (
@@ -221,22 +223,24 @@ function Sneakers() {
                   backgroundImage: `url(${el.img})`,
                 }}
                 to={`/${el.id}`}
-                onClick={() => openProduct(
-                  el.id,
-                  el.mark,
-                  el.img,
-                  el.name,
-                  el.price,
-                  el.oldPrice,
-                  el.sale,
-                  el.quantity,
-                  el.category,
-                  el.imgSecond,
-                  el.imgThird,
-                  el.imgFour,
-                  el.size,
-                  el.color
-                )}
+                onClick={() =>
+                  openProduct(
+                    el.id,
+                    el.mark,
+                    el.img,
+                    el.name,
+                    el.price,
+                    el.oldPrice,
+                    el.sale,
+                    el.quantity,
+                    el.category,
+                    el.imgSecond,
+                    el.imgThird,
+                    el.imgFour,
+                    el.size,
+                    el.color
+                  )
+                }
               >
                 <div className="firstMark">
                   <div
@@ -375,6 +379,7 @@ function Sneakers() {
           return null;
         }
       })}
+      </div>
     </div>
   );
 }

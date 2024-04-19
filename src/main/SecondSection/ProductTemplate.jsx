@@ -13,7 +13,6 @@ import {
   addNewTotalPrice,
   removeNewTotalPrice,
 } from '../../redux/cart/reducer';
-// import api from '../SecondSection/Posts';
 import { addInLiked } from '../../redux/cart/reducer';
 import Viewer from 'react-viewer';
 
@@ -149,10 +148,9 @@ function ProductTemplate({
   };
 
   const handleClick = () => {
-    console.log(selectedSize);
+    console.log(category)
     const check = JSON.parse(localStorage.getItem('fillBag'));
     const getID = check[id];
-    console.log(getID)
     const sizee = selectedSize;
     if (getID[selectedSize]) {
       localStorage.removeItem(`${name}${selectedSize}`);
@@ -183,6 +181,7 @@ function ProductTemplate({
           size,
           selectedSize,
           color,
+          category
         })
       );
       localStorage.setItem('selectedSize', JSON.stringify(selectedSize));
@@ -203,7 +202,8 @@ function ProductTemplate({
           imgFour,
           size,
           color,
-          widthMark
+          widthMark,
+          selectedSize
         })
       );
       dispatch(addNewTotalPrice({ name, price, sizee }));
@@ -222,7 +222,6 @@ function ProductTemplate({
 
   const postSize = (thisSize) => {
     setSelectedSize(thisSize);
-    console.log(selectedSize);
   };
 
   return (
