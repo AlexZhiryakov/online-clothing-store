@@ -197,10 +197,13 @@ function ProductTemplate({
           oldPrice,
           sale,
           quantity,
-          widthMark,
+          category,
+          imgSecond,
+          imgThird,
+          imgFour,
           size,
           color,
-          selectedSize,
+          widthMark
         })
       );
       dispatch(addNewTotalPrice({ name, price, sizee }));

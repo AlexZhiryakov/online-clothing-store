@@ -116,6 +116,50 @@ function Bag() {
     localStorage.setItem('totalPriceOrder', JSON.stringify(totalPriceList));
   };
 
+  const openProduct = (
+    id,
+    mark,
+    img,
+    name,
+    price,
+    oldPrice,
+    sale,
+    quantity,
+    category,
+    imgSecond,
+    imgThird,
+    imgFour,
+    size,
+    color,
+    widthMark
+  ) => {
+    localStorage.setItem(
+      'productDetails',
+      JSON.stringify({
+        id,
+        mark,
+        img,
+        name,
+        price,
+        oldPrice,
+        sale,
+        quantity,
+        category,
+        imgSecond,
+        imgThird,
+        imgFour,
+        size,
+        color,
+        widthMark
+      })
+    );
+    const scroll = () => {
+      const element = document.getElementById('Header');
+      element.scrollIntoView({ behavior: 'smooth' });
+    };
+    scroll();
+  };
+
   return (
     <div className="Bag">
       <h2>Корзина</h2>
@@ -155,12 +199,30 @@ function Bag() {
         {itemsList?.map((product) => (
           <div className="productList" key={product.id}>
             <div className="products">
-              <div
+              <Link
                 className="productImg"
+                to={`/${product.id}`}
+                onClick={() => openProduct(
+                  product.id,
+                  product.mark,
+                  product.img,
+                  product.name,
+                  product.price,
+                  product.oldPrice,
+                  product.sale,
+                  product.quantity,
+                  product.category,
+                  product.imgSecond,
+                  product.imgThird,
+                  product.imgFour,
+                  product.size,
+                  product.color,
+                  product.widthMark
+                )}
                 style={{
                   backgroundImage: `url(${product.img})`,
                 }}
-              ></div>
+              ></Link>
 
               <div className="informationAboutProduct">
                 <div className="productName">{product.name}</div>
