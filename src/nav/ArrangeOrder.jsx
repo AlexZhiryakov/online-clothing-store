@@ -17,10 +17,6 @@ function ArrangeOrder() {
     setSuccessfullyOrder(!false);
     localStorage.clear();
     localStorage.setItem('newTotalPrice', JSON.stringify([]));
-
-    const element = document.getElementById('successfullyOrder');
-    console.log(element)
-    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   const clickPayment = (id) => {
@@ -301,9 +297,9 @@ function ArrangeOrder() {
         <div className="buttonNext">
           <div className="allButton">
             {selectedWay && payment ? (
-              <button className='input'>
-                <Link to='/successfullyOrder' className='Link' onClick={() => clickSuccessfullyOrder()}>Далее</Link>
-              </button>
+              <Link className='input' onClick={clickSuccessfullyOrder} to='/successfullyOrder'>
+                Далее
+              </Link>
             ) : (
               <button className='input'>Далее</button>
             )}

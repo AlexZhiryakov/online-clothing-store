@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './ArrangeOrder.css'
 
 function SuccessfullyOrder() {
+  useEffect(() => {
+    const element = document.getElementById('Header');
+    element.scrollIntoView({ behavior: 'smooth' });
+  }, [])
+
   return (
     <div className="successfullyOrder" id='successfullyOrder'>
         <div className="thanks">Спасибо! Ждите письмо о прибытии товара на указанную вами электронную почту</div>

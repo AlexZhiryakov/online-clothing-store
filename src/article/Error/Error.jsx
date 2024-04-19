@@ -6,7 +6,7 @@ function Error() {
   return (
     <div className="Error">
       <div className="errorImg"></div>
-      <div className="errorText">Страница была не найдена или она находится на этапе разработки</div>
+      <div className="errorText">Страница находится на этапе разработки</div>
       <Link className='errorButton' to='/'>На главную</Link>
     </div>
   );

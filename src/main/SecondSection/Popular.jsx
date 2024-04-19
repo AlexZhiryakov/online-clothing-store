@@ -22,7 +22,7 @@ function Popular() {
   };
 
   return (
-    <div className="Popular">
+    <div className="Popular" id='Popular'>
       <div className="firstLine">
         <h2 className="namePopular">Популярное</h2>
         <div className="navigation">

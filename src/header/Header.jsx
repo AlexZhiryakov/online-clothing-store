@@ -47,7 +47,7 @@ function Header() {
               <a className="emailImg" href="mailto:order@ogstyle.ru" target='blank'></a>
             )}
             {width > breakpoint ? (
-              <div className="phone">+7 (902) 041-63-39</div>
+              <div className="phone">+7 (963) 524-80-60</div>
             ) : (
               <a className="phoneImg" href='tel:+79635248060' target='blank'></a>
             )}
