@@ -48,7 +48,7 @@ body {
           border-radius: 4vw;
         }
         .column {
-          margin-left: 1vw;
+          margin-left: 2vw;
           @media (max-width: 700px) {
             margin-left: 4vw;
             margin-top: 3vw;
@@ -65,19 +65,21 @@ body {
             }
           }
           .priceFirstInFirstColumn {
-            background-color: #fff;
-            width: 4.53vw;
-            height: 1.04vw;
-            padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+            margin-top: 15.5vw;
+            color: rgb(43, 41, 41);
+            font-size: 1.04vw;
+            font-weight: 500;
+            line-height: 150%;
+            padding: 0.42vw 1.04vw 0.42vw 1.3vw;
+            width: 5.9vw;
             border-radius: 0.63vw;
+            background: rgb(255, 255, 255);
             font-weight: bold;
-            margin-top: 16.7vw;
-            font-size: 0.8vw;
             @media (max-width: 700px) {
+              padding: 0vw 0vw;
               font-size: 3.2vw;
               width: 18vw;
               height: 5vw;
-              padding: 1vw 3vw 0.3vw 3.5vw;
               border-radius: 1.5vw;
               margin-top: 12vw;
             }
@@ -244,16 +246,16 @@ body {
               font-size: 1.04vw;
               font-weight: 500;
               line-height: 150%;
-              padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+              padding: 0.42vw 1.04vw 0.42vw 1.3vw;
               width: 5.9vw;
               border-radius: 0.63vw;
               background: rgb(255, 255, 255);
               font-weight: bold;
               @media (max-width: 700px) {
+                padding: 0vw 0vw;
                 font-size: 3.2vw;
                 width: 18vw;
                 height: 5vw;
-                padding: 0.8vw 3vw;
                 border-radius: 1.5vw;
                 margin-top: 12vw;
               }
@@ -320,7 +322,7 @@ body {
               font-size: 1.04vw;
               font-weight: 500;
               line-height: 150%;
-              padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+              padding: 0.42vw 1.04vw 0.42vw 1.3vw;
               width: 5.9vw;
               border-radius: 0.63vw;
               background: rgb(255, 255, 255);
@@ -401,7 +403,7 @@ body {
               font-size: 1.04vw;
               font-weight: 500;
               line-height: 150%;
-              padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+              padding: 0.42vw 1.04vw 0.42vw 1.3vw;
               width: 5.9vw;
               border-radius: 0.63vw;
               background: rgb(255, 255, 255);
@@ -452,9 +454,10 @@ body {
 Link {
   outline: none;
 }
-#priceTrousers {
+#priceTrousers, #priceFirstInFirstColumn, #priceTShirt, #priceHoody {
   @media (max-width: 700px) {
-    width: 22vw;
-    padding: 0.8vw 0 0.8vw 3.5vw;
+    width: 23vw;
+    padding: 0.8vw 0 0.8vw 0;
+    text-align: center;
   }
 }

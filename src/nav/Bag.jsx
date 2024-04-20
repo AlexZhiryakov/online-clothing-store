@@ -143,7 +143,7 @@ function Bag() {
         price,
         oldPrice,
         sale,
-        quantity,
+        quantity: 1,
         category,
         imgSecond,
         imgThird,

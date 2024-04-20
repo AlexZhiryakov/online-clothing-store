@@ -18,7 +18,7 @@ function Sale() {
               <div className="sneakers">
                 <div className="column">
                   <div className="nameFirstInFirstColumn">Кроссовки</div>
-                  <div className="priceFirstInFirstColumn">от 8 990 ₽</div>
+                  <div className="priceFirstInFirstColumn" id='priceFirstInFirstColumn'>от 8 990 ₽</div>
                 </div>
                 <div className="sneaker"></div>
               </div>
@@ -45,7 +45,7 @@ function Sale() {
                 <div className="tshirt">
                   <div className="columnTShirt">
                     <div className="nameTShirt">Футболки</div>
-                    <div className="priceTShirt">от 4 990 ₽</div>
+                    <div className="priceTShirt" id='priceTShirt'>от 4 990 ₽</div>
                   </div>
                   <div className="bgTShirt"></div>
                 </div>
@@ -66,7 +66,7 @@ function Sale() {
                 <div className="hoody">
                   <div className="HoodyColumn">
                     <div className="nameHoody">Толстовки</div>
-                    <div className="priceHoody">от 6 990 ₽</div>
+                    <div className="priceHoody" id='priceHoody'>от 6 990 ₽</div>
                   </div>
                   <div className="bgHoody"></div>
                 </div>

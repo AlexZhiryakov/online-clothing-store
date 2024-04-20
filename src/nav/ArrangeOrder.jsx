@@ -297,11 +297,11 @@ function ArrangeOrder() {
         <div className="buttonNext">
           <div className="allButton">
             {selectedWay && payment ? (
-              <button className='input'>
-                <Link className='Link' onClick={clickSuccessfullyOrder} to='/successfullyOrder'>
-                  Далее
-                </Link>
-              </button>
+              <Link to='/successfullyOrder'>
+                <button className='input'  onClick={clickSuccessfullyOrder}>
+                    Далее
+                </button>
+              </Link>
             ) : (
               <button className='input'>Далее</button>
             )}

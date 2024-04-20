@@ -75,7 +75,7 @@ body {
   }
 }
 .Sale .allColumns .firstColumn .sneakers .column {
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 @media (max-width: 700px) {
   .Sale .allColumns .firstColumn .sneakers .column {
@@ -97,21 +97,23 @@ body {
   }
 }
 .Sale .allColumns .firstColumn .sneakers .column .priceFirstInFirstColumn {
-  background-color: #fff;
-  width: 4.53vw;
-  height: 1.04vw;
-  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  margin-top: 15.5vw;
+  color: rgb(43, 41, 41);
+  font-size: 1.04vw;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.42vw 1.04vw 0.42vw 1.3vw;
+  width: 5.9vw;
   border-radius: 0.63vw;
+  background: rgb(255, 255, 255);
   font-weight: bold;
-  margin-top: 16.7vw;
-  font-size: 0.8vw;
 }
 @media (max-width: 700px) {
   .Sale .allColumns .firstColumn .sneakers .column .priceFirstInFirstColumn {
+    padding: 0vw 0vw;
     font-size: 3.2vw;
     width: 18vw;
     height: 5vw;
-    padding: 1vw 3vw 0.3vw 3.5vw;
     border-radius: 1.5vw;
     margin-top: 12vw;
   }
@@ -324,7 +326,7 @@ body {
   font-size: 1.04vw;
   font-weight: 500;
   line-height: 150%;
-  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  padding: 0.42vw 1.04vw 0.42vw 1.3vw;
   width: 5.9vw;
   border-radius: 0.63vw;
   background: rgb(255, 255, 255);
@@ -332,10 +334,10 @@ body {
 }
 @media (max-width: 700px) {
   .Sale .allColumns .secondColumn .firstString .trousers .trousersColumn .priceTrousers {
+    padding: 0vw 0vw;
     font-size: 3.2vw;
     width: 18vw;
     height: 5vw;
-    padding: 0.8vw 3vw;
     border-radius: 1.5vw;
     margin-top: 12vw;
   }
@@ -417,7 +419,7 @@ body {
   font-size: 1.04vw;
   font-weight: 500;
   line-height: 150%;
-  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  padding: 0.42vw 1.04vw 0.42vw 1.3vw;
   width: 5.9vw;
   border-radius: 0.63vw;
   background: rgb(255, 255, 255);
@@ -516,7 +518,7 @@ body {
   font-size: 1.04vw;
   font-weight: 500;
   line-height: 150%;
-  padding: 0.42vw 1.04vw 0.42vw 1.04vw;
+  padding: 0.42vw 1.04vw 0.42vw 1.3vw;
   width: 5.9vw;
   border-radius: 0.63vw;
   background: rgb(255, 255, 255);
@@ -569,8 +571,9 @@ Link {
 }
 
 @media (max-width: 700px) {
-  #priceTrousers {
-    width: 22vw;
-    padding: 0.8vw 0 0.8vw 3.5vw;
+  #priceTrousers, #priceFirstInFirstColumn, #priceTShirt, #priceHoody {
+    width: 23vw;
+    padding: 0.8vw 0 0.8vw 0;
+    text-align: center;
   }
 }
