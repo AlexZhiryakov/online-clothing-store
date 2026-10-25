@@ -1,8 +1,26 @@
-# React + Vite
+# 🛍 OG STYLE - Интернет-магазин одежды и обуви
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 О проекте
+Фронтенд интернет-магазина спортивной одежды и обуви. Проект реализует каталог товаров, корзину, фильтрацию и адаптивную верстку.
 
-Currently, two official plugins are available:
+**🔗 Живое демо:** [ogstyle.vercel.app](https://ogstyle.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Стек технологий
+* **React** (Hooks, Components)
+* **Redux** (управление состоянием корзины и товаров)
+* **JavaScript (ES6+)**
+* **Vite** (сборщик)
+* **CSS** (адаптивная верстка, Flexbox/Grid)
+
+## 🚀 Функционал
+* Просмотр каталога товаров.
+* Фильтрация по категориям (кроссовки, футболки и т.д.).
+* Добавление товаров в корзину и изменение количества.
+* Сохранение данных в `localStorage` (корзина не пропадает при перезагрузке).
+* Адаптивный дизайн (мобильная версия).
+
+## ⚙️ Как запустить локально
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/AlexZhiryakov/online-clothing-store.git
+   cd online-clothing-store
