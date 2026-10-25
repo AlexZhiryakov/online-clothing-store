@@ -3,6 +3,7 @@ import { Route, Routes, Link, HashRouter } from 'react-router-dom';
 import ProductTemplate from './ProductTemplate';
 import ArrangeOrder from '../../nav/ArrangeOrder';
 import SuccessfullyOrder from '../../nav/SuccessfullyOrder';
+import Success from '../../nav/Success';
 import Error from '../../article/Error/Error';
 
 function RouterProduct() {
@@ -35,6 +36,7 @@ function RouterProduct() {
           />
         ) : null}
         <Route path='/order' element={<ArrangeOrder />} />
+        <Route path='/success' element={<Success />} />
         <Route path='/successfullyOrder' element={<SuccessfullyOrder />} />
         <Route path='/subsribe' element={<Error />} />
       </Routes>

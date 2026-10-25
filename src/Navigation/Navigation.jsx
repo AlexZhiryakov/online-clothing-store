@@ -25,7 +25,8 @@ function Navigation() {
                 <div className="slash">/</div>
                 <div>Оформление заказа</div>
               </div>
-            ) : location.pathname === '/successfullyOrder' ? (
+            ) : location.pathname === '/success' ||
+              location.pathname === '/successfullyOrder' ? (
               <div>Оформление заказа</div>
             ) : location.pathname === '/sneakers' ? (
               <div>Кроссовки</div>

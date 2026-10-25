@@ -30,6 +30,7 @@ function Main() {
       location.pathname !== '/heart' &&
       location.pathname !== '/bag' &&
       location.pathname !== '/order' &&
+      location.pathname !== '/success' &&
       location.pathname !== '/successfullyOrder' &&
       location.pathname !== '/subsribe' &&
       location.pathname !== (getID !== null ? `/${getID.id}` : null) ? (

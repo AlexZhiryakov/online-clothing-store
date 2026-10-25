@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ArrangeOrder.css';
 
 function ArrangeOrder() {
+  const navigate = useNavigate();
   const [selectedWay, setSelectedWay] = useState(null);
   const [payment, setPayment] = useState(null);
-  const [successfullyOrder, setSuccessfullyOrder] = useState(false);
   const itemsList = JSON.parse(localStorage.getItem('itemsList'));
   const totalPriceList = JSON.parse(localStorage.getItem('totalPriceOrder'));
 
@@ -13,10 +13,11 @@ function ArrangeOrder() {
     setSelectedWay(id);
   };
 
-  const clickSuccessfullyOrder = () => {
-    setSuccessfullyOrder(!false);
+  const clickSuccessfullyOrder = (event) => {
+    event.preventDefault();
     localStorage.clear();
     localStorage.setItem('newTotalPrice', JSON.stringify([]));
+    navigate('/success');
   };
 
   const clickPayment = (id) => {
@@ -213,7 +214,7 @@ function ArrangeOrder() {
           </div>
         </div>
       </div>
-      <form>
+      <form onSubmit={clickSuccessfullyOrder}>
         <div className="thirdPoint">
           <div className="nameThirdPoint">3. Контактные данные</div>
           <div className="allInfo">
@@ -297,13 +298,13 @@ function ArrangeOrder() {
         <div className="buttonNext">
           <div className="allButton">
             {selectedWay && payment ? (
-              <Link to='/successfullyOrder'>
-                <button className='input'  onClick={clickSuccessfullyOrder}>
-                    Далее
-                </button>
-              </Link>
+              <button className="input" type="submit">
+                Далее
+              </button>
             ) : (
-              <button className='input'>Далее</button>
+              <button className="input" type="button">
+                Далее
+              </button>
             )}
           </div>
           {selectedWay && payment ? (
